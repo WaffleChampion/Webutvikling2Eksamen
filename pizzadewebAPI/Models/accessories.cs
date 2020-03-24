@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace pizzadewebAPI.Models{
 
-    public class accessories{
+    public class Accessories{
         [Key]
         public int id{ get; set; }
         public string type {get; set;}
