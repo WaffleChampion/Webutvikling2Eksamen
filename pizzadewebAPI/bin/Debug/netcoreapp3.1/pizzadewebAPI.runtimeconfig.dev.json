@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Bendik\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Bendik\\.nuget\\packages"
+    ]
+  }
+}
