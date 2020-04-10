@@ -22,6 +22,33 @@ namespace pizzadewebAPI.Controllers{
             return dishesList;
         }
 
+        [HttpGet("{id}")]
+        public async Task<Dishes> Get(int id){
+            Dishes chosenDishes = await _context.Dishes.FirstOrDefaultAsync( dishes => dishes.id == id);
+            return chosenDishes;
+        }
+                
+        [HttpPost]
+        public async Task<Dishes> Post(Dishes newDish){
+            _context.Dishes.Add(newDish);
+            await _context.SaveChangesAsync();
+            return newDish;
+        }
+
+        [HttpPut]
+        public async Task<Dishes> Put(Dishes changeDishes){
+            _context.Update(changeDishes);
+            await _context.SaveChangesAsync();
+            return changeDishes;
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<Dishes> Delete(int id){
+            Dishes deleteDishes = await _context.Dishes.FirstOrDefaultAsync( dishes => dishes.id == id );
+            _context.Dishes.Remove(deleteDishes);
+            return deleteDishes;
+        }
+
 
     }
 
