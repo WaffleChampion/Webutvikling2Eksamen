@@ -1,9 +1,16 @@
+<template>
+    <div>
+        <h1>Alle Retter</h1>
+        <DishList />
+    </div>
+</template>
+
 <script>
-import DishesList from '@/components/DishesList.vue'
+import DishList from '@/components/DishList.vue'
 export default {
 name: 'Meny',
   components: {
-    DishesList
+    DishList
   }
 }
 </script>

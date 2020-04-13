@@ -1,11 +1,12 @@
 <template>
     <v-card>
-        <v-card-title>{{ dishType }}</v-card-title>
-        <v-card-title>{{ dishName }}</v-card-title>
-        <v-card-title>{{ ingredients }}</v-card-title>
-        <v-card-title>{{ vegetarian }}</v-card-title>
-        <v-card-title>{{ allergens }}</v-card-title>
-        <v-card-title>{{ price }}</v-card-title>
+        <v-card-title>{{ id }}</v-card-title>
+        <v-card-title>Type rett: {{ type }}</v-card-title>
+        <v-card-title>Navn på rett: {{ name }}</v-card-title>
+        <v-card-title>Ingredienser: {{ ingredients }}</v-card-title>
+        <v-card-title>Vegetar: {{ vegetarian }}</v-card-title>
+        <v-card-title>Allergener: {{ allergens }}</v-card-title>
+        <v-card-title>Pris: {{ price }}kr</v-card-title>
     </v-card>
 </template>
 
@@ -13,11 +14,14 @@
 export default {
     name: "DishItem",
     props: {
-        dishType: {
+        id:{
+            type: Number
+        },
+        type: {
             type: String
         },
-        dishName: {
-            type: String
+        name:{
+            type:String
         },
         ingredients: {
             type: String

@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-row>
-            <v-col cols="12" sm="6" lg="4" v-for="dish in Dishes" :key="dish.id">
+            <v-col cols="12" sm="6" lg="4" v-for="dish in dishes" :key="dish.id">
                 <DishItem 
                     :id="dish.id"
                     :type="dish.dishType" 
@@ -19,11 +19,11 @@
 import axios from 'axios'
 import DishItem from '@/components/DishItem'
 export default {
-    name: "DishesList",
+    name: "DishList",
     data(){
         return {
             dishes:[ { 
-                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Anana, skinke, ost, tomatsaus", vegetarian: false, allergens: "gluten, laktose", price: 179
+                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Ananas, skinke, ost, tomatsaus", vegetarian: false, allergens: "gluten, laktose", price: 179,
             } ]
         }
     },
@@ -34,7 +34,7 @@ export default {
             } )
     },
     components: {
-        DishesItem
+        DishItem
     }
 }
 </script>
