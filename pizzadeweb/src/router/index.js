@@ -22,17 +22,17 @@ Vue.use(VueRouter)
     path: '/meny',
     name: 'Meny',
     component: () => import("../views/Meny.vue")
-  },
-  {    
-    path: '/add-dish',
-    name: 'Add-Dish',
-    component: () => import("../views/AddDish.vue")
-  },
-  {
-    path: '/remove-dish',
-    name: 'Remove-Dish',
-    component: () => import("../views/RemoveDish")
   }
+  //{    
+   // path: '/add-dish',
+   // name: 'Add-Dish',
+   // component: () => import("../views/AddDish.vue")
+ // },
+  //{
+    //path: '/remove-dish',
+  //  name: 'Remove-Dish',
+    //component: () => import("../views/RemoveDish")
+  //}
 ]
 
 const router = new VueRouter({

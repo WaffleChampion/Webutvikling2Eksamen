@@ -1,0 +1,40 @@
+<template>
+    <div>
+        <v-row>
+            <v-col cols="12" sm="6" lg="4" v-for="dish in Dishes" :key="dish.id">
+                <DishItem 
+                    :id="dish.id"
+                    :type="dish.dishType" 
+                    :name="dish.dishName" 
+                    :ingredients="dish.ingredients"
+                    :vegetarian="dish.vegetarian"  
+                    :allergens="dish.allergens"
+                    :price="dish.price"/>
+
+            </v-col>
+        </v-row>
+    </div>
+</template>
+<script>
+import axios from 'axios'
+import DishItem from '@/components/DishItem'
+export default {
+    name: "DishesList",
+    data(){
+        return {
+            dishes:[ { 
+                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Anana, skinke, ost, tomatsaus", vegetarian: false, allergens: "gluten, laktose", price: 179
+            } ]
+        }
+    },
+    created(){
+        axios.get("https://localhost:5001/Meny")
+            .then( result => {
+                this.dishes = result.data;
+            } )
+    },
+    components: {
+        DishesItem
+    }
+}
+</script>
