@@ -30,6 +30,14 @@ namespace pizzadewebAPI
             services.AddDbContext<MenyContext>(
                 options => options.UseSqlite("Data Source=MenyDB.db")
             );
+             services.AddCors(
+                options => options.AddPolicy("AllowAll", 
+                    builder => builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                )
+            );
             services.AddControllers();
         }
 
@@ -40,6 +48,12 @@ namespace pizzadewebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+                        
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 
