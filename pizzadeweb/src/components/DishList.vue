@@ -9,7 +9,7 @@
                     :ingredients="dish.ingredients"
                     :vegetarian="dish.vegetarian"  
                     :allergens="dish.allergens"
-                    :price="dish.price"/>
+                    :price="dish.price" />
 
             </v-col>
         </v-row>
