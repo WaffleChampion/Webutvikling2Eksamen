@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bendik\\Desktop\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj": {}
+    "C:\\Users\\Didrik\\Documents\\GitHub\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bendik\\Desktop\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj": {
+    "C:\\Users\\Didrik\\Documents\\GitHub\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bendik\\Desktop\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Didrik\\Documents\\GitHub\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj",
         "projectName": "pizzadewebAPI",
-        "projectPath": "C:\\Users\\Bendik\\Desktop\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj",
-        "packagesPath": "C:\\Users\\Bendik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bendik\\Desktop\\Webutvikling2Eksamen\\pizzadewebAPI\\obj\\",
+        "projectPath": "C:\\Users\\Didrik\\Documents\\GitHub\\Webutvikling2Eksamen\\pizzadewebAPI\\pizzadewebAPI.csproj",
+        "packagesPath": "C:\\Users\\Didrik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Didrik\\Documents\\GitHub\\Webutvikling2Eksamen\\pizzadewebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bendik\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Didrik\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
