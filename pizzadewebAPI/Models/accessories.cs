@@ -9,6 +9,8 @@ namespace pizzadewebAPI.Models{
         public string name { get; set;}
         public string allergens { get; set; }
         public int price { get; set; }
+
+        public string imgSrc{get; set;}
     }
 
 }

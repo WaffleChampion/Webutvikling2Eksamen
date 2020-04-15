@@ -11,6 +11,8 @@ namespace pizzadewebAPI.Models{
         public string vegetarian {get; set;}
         public string allergens{ get; set;}
         public int price{ get; set;}
+
+        public string imgSrc{get; set;}
     }
 
 }
