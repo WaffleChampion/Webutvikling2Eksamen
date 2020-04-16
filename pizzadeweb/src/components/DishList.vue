@@ -9,7 +9,8 @@
                     :ingredients="dish.ingredients"
                     :vegetarian="dish.vegetarian"  
                     :allergens="dish.allergens"
-                    :price="dish.price" />
+                    :price="dish.price"
+                    :imageSrc="dish.imageSrc" />
 
             </v-col>
         </v-row>
@@ -23,7 +24,7 @@ export default {
     data(){
         return {
             dishes:[ { 
-                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Ananas, skinke, ost, tomatsaus", vegetarian: false, allergens: "gluten, laktose", price: 179,
+                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Ananas, skinke, ost, tomatsaus", vegetarian: false, allergens: "gluten, laktose", price: 179, imageSrc: "pizzahawaii.jpg"
             } ]
         }
     },
