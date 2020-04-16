@@ -47,6 +47,11 @@ Vue.use(VueRouter)
     path: '/dessert',
     name: 'dessert',
     component: () => import("../views/Dessert.vue")
+  },
+  {
+    path: '/edit',
+    name: 'edit',
+    component:() => import("../views/AddDish.vue")
   }
   //{    
    // path: '/add-dish',
