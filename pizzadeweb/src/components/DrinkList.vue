@@ -5,7 +5,8 @@
                 <DrinkItem 
                 :id="drink.id"
                 :type="drink.type"
-                :price="drink.price" />
+                :price="drink.price"
+                :imageSrc="drink.imageSrc" />
                 
                 
 

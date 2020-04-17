@@ -1,21 +1,24 @@
 <template>
     <div>
+        <div id="nav">
             <router-link to="/">Home</router-link> |
             <router-link to="/meny">Menu</router-link> |
             <router-link to="/about">About</router-link> |
             <router-link to="/edit">Rediger</router-link>
-        <h1>Legg til ny rett</h1>
-        <DishForm />
+
+        </div>
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
+
     </div>
 </template>
 
 <script>
-import DishForm from '@/components/DishForm'
+import HelloWorld from '@/components/HelloWorld.vue'
 export default {
-    name: "AddDish",
-    components: {
-        DishForm
+    name: "CustumerHome",
+    components:{
+        HelloWorld
     }
+    
 }
 </script>
-

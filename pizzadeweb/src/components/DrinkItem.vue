@@ -1,7 +1,13 @@
 <template>
   <v-card>
-      <v-card-title>{{ type }}</v-card-title>
-      <v-card-title>{{ price }}</v-card-title>
+      <v-card-title>Navn: {{ type }}</v-card-title>
+        <v-img
+        :src="`https://localhost:5001/images/Drinks/${imageSrc}`"
+        height= "200px"
+        width="100px">
+        </v-img>
+      <v-card-title>Pris: {{ price }}Kr</v-card-title>
+
   </v-card>
 </template>
 <script>
@@ -14,6 +20,9 @@ export default {
         },
         price:{
             type: Number
+        },
+        imageSrc:{
+            type:String
         }
     }
 }
