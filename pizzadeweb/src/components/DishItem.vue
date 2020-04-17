@@ -32,7 +32,7 @@ export default {
             type: String
         },
         vegetarian: {
-            type: Boolean
+            type: String
         },
         allergens: {
             type: String
