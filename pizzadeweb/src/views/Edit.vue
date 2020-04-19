@@ -7,9 +7,9 @@
             <router-link to="/edit-main">Rediger</router-link>
         </div>
         <div>
-            <router-link to="/add">Legg til</router-link>
-            <router-link to="/delete">Fjern</router-link>
-            <router-link to="/edit">Rediger rett</router-link>
+            <router-link to="/add">Legg til</router-link> |
+            <router-link to="/delete">Fjern</router-link> |
+            <router-link to="/edit">Rediger rett</router-link> |
         </div>
     </div>
 </template>

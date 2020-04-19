@@ -4,6 +4,11 @@
             <router-link to="/meny">Menu</router-link> |
             <router-link to="/about">About</router-link> |
             <router-link to="/edit">Rediger</router-link>
+        <div>
+            <router-link to="/add">Legg til</router-link> |
+            <router-link to="/delete">Fjern</router-link> |
+            <router-link to="/edit">Rediger rett</router-link> |
+        </div>
         <h1>Rediger rett</h1>
         <DishEdit />
     </div>
