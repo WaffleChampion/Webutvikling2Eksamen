@@ -8,9 +8,9 @@
 
         </div>
         <div>
-            <router-link to="/add">Legg til</router-link>
-            <router-link to="/delete">Fjern</router-link>
-            <router-link to="/edit">Rediger rett</router-link>
+            <router-link to="/add">Legg til</router-link> |
+            <router-link to="/delete">Fjern</router-link> |
+            <router-link to="/edit">Rediger rett</router-link> |
         </div>
         <HelloWorld msg="Welcome to Your Vue.js App"/>
 
