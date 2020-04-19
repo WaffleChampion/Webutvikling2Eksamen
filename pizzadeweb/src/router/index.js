@@ -49,20 +49,26 @@ Vue.use(VueRouter)
     component: () => import("../views/Dessert.vue")
   },
   {
+    path: '/edit-main',
+    name: 'edit-main',
+    component:() => import("../views/Edit.vue")
+  },
+  {
     path: '/edit',
     name: 'edit',
-    component:() => import("../views/AddDish.vue")
+    component:()=> import("../views/EditDish.vue")
+  },
+  {
+    path: '/add',
+    name: 'add',
+    component:()=> import("../views/AddDish.vue")
+  },
+  {
+    path: '/delete',
+    name: 'delete',
+    component: ()=> import("../views/RemoveDish.vue")
   }
-  //{    
-   // path: '/add-dish',
-   // name: 'Add-Dish',
-   // component: () => import("../views/AddDish.vue")
- // },
-  //{
-    //path: '/remove-dish',
-  //  name: 'Remove-Dish',
-    //component: () => import("../views/RemoveDish")
-  //}
+
 ]
 
 const router = new VueRouter({
