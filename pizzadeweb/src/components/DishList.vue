@@ -24,7 +24,7 @@ export default {
     data(){
         return {
             dishes:[ { 
-                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Ananas, skinke, ost, tomatsaus", vegetarian: false, allergens: "gluten, laktose", price: 179, imageSrc: "pizzahawaii.jpg"
+                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Ananas, skinke, ost, tomatsaus", vegetarian: "false", allergens: "gluten, laktose", price: 179, imageSrc: "pizzahawaii.jpg"
             } ]
         }
     },

@@ -1,0 +1,3 @@
+for å slette:
+text felt øverst som man kan skrive inn et tall i, men knapp ved siden av for å kalle på funksjonen som sletter kortet.
+under en oversikt over alle retter med primærnøkkel øverst(id).

@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <div id="app">
     <div id="nav">
       <router-link to="/costumer">Kunde</router-link>|
@@ -6,6 +7,7 @@
     </div>
     <router-view/>
   </div>
+</v-app>
 </template>
 
 <style lang="scss">
