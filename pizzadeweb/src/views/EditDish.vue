@@ -10,6 +10,7 @@
             <router-link to="/edit">Rediger rett</router-link> |
         </div>
         <h1>Rediger rett</h1>
+
         <DishEdit />
     </div>
 </template>
@@ -17,9 +18,10 @@
 <script>
 import DishEdit from '@/components/DishEdit.vue'
 export default {
-    name: "RemoveDish",
+    name: "EditDish",
     components: {
         DishEdit
     }
+
 }
 </script>
