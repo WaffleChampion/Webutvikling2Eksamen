@@ -2,11 +2,10 @@
 <div>
     <v-row>
         <v-col cols="12" sm="6" lg="4" v-for="dessert in dessertes" :key="dessert.id">
-            <dessertItem
+            <DessertItem
             :id="dessert.id"
-            :type="dessert.dessertType"
-            :name="dessert.DessertName"
-            :ingredients="dessert.ingredients"
+            :name="dessert.name"
+            :Description="dessert.description"
             :price="dessert.price"/>
 
         </v-col>
@@ -17,20 +16,22 @@
 
 <script>
 import axios from 'axios'
-import dessertItem from '@/components/DessertItem'
+import DessertItem from '@/components/DessertItem.vue'
 export default {
     name: "DessertList",
     data(){
         return {
             dessertes: [ {
-                id: 1, type: "Cake", name: "OreoKake", ingredients: "Oreo, Vanilje, Egg", price: 70,
+                id: 1, name: "OreoKake", description: "Oreo, Vanilje, Egg", price: 70
             } ]
         }
     },
     created(){
-        axios.get("https://localhost:5001/meny")
-        .then( result => {
+        console.log("working")
+        axios.get("https://localhost:5001/Desserts").then( result => {
+            console.log(result.data)
             this.dessertes = result.data;
+
         } )
     },
     components: {
