@@ -25,6 +25,7 @@ export default {
             axios.delete(`https://localhost:5001/meny/${this.DeleteDish.id}`)
             .then( response => {
                 console.log(response.data)
+                this.DishList.$forceUpdate();
             })
 },
  
