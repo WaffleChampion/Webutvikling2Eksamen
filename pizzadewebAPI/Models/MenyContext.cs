@@ -9,7 +9,7 @@ namespace pizzadewebAPI.Models{
         public DbSet<Dishes> Dishes {get; set;}
         public DbSet<Accessories> Accessories {get; set;}
         public DbSet<Drinks> Drinks {get; set;}
-        public DbSet<Dessert> Desserts {get; set;}
+        public DbSet<Desserts> Desserts {get; set;}
 
     }
 
