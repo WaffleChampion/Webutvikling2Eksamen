@@ -15,7 +15,7 @@ export default {
     data(){
         return{
 
-            DeleteDish:{},
+            DeleteDish:{id: 1},
             file:null
         }
     },
@@ -23,8 +23,8 @@ export default {
 
         removeDish(){
             axios.delete(`https://localhost:5001/meny/${this.DeleteDish.id}`)
-            .then( response => {
-                console.log(response.data)
+            .then( result => {
+                console.log(result.data)
             })
 },
  
