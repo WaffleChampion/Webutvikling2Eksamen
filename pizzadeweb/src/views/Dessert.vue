@@ -11,6 +11,17 @@
             <router-link to="/dessert">Dessert</router-link>|
         </div>
         <h1>Alle Desserter</h1>
+        <DessertList />
 
     </div>
 </template>
+
+<script>
+import DessertList from '@/components/DessertList.vue'
+export default {
+    name:"Dessert",
+    components: {
+        DessertList
+    }
+}
+</script>
