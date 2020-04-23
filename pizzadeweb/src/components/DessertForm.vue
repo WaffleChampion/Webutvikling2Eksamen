@@ -2,9 +2,9 @@
     <div>
         <v-row>
             <v-col cols="12" sm="6" lg="4" class="mx-auto">
-                <v-text-field v-model="newDrink.drinkType" label="Navn på rett"></v-text-field>
-
-                <v-text-field v-model.number="newDrink.price" type="number" label="legg til pris"></v-text-field>
+                <v-text-field v-model="newDessert.dessertName" label="Navn på rett"></v-text-field>
+                <v-text-field v-model="newDessert.desciption" label="Beskrivelse av rett"></v-text-field>
+                <v-text-field v-model.number="newDessert.price" type="number" label="legg til pris"></v-text-field>
                 <v-file-input v-model="file" show-size></v-file-input>
                 <v-btn @click="postDish">Lagre ny rett</v-btn>
             </v-col>
@@ -14,21 +14,21 @@
 <script>
 import axios from 'axios'
 export default {
-    name: "DrinkForm",
+    name: "DessetForm",
     data(){
         return {
-            newDrink: { drinkType: "",  imageSrc: "" },
+            newDessert: { dessertName: "",description:"",  imageSrc: "" },
             file: null
         }
     },
     methods: {
         postDish(){
-            this.newDrink.imageSrc = this.newDrink.drinkType+".jpg";
+            this.newDessert.imageSrc = this.newDessert.dessertName+".jpg";
 
             let data = new FormData();
             data.append("file", this.file);
 
-            axios.post("https://localhost:5001/Drink", this.newDrink).then( result => {
+            axios.post("https://localhost:5001/Drink", this.newDessert).then( result => {
                     console.log( result.data );
 
                     axios({
