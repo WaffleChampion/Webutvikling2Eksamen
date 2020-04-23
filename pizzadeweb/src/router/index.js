@@ -56,17 +56,17 @@ Vue.use(VueRouter)
   {
     path: '/edit',
     name: 'edit',
-    component:()=> import("../views/EditDish.vue")
+    component:()=> import("../views//Dish/EditDish.vue")
   },
   {
     path: '/add',
     name: 'add',
-    component:()=> import("../views/AddDish.vue")
+    component:()=> import("../views/Dish/AddDish.vue")
   },
   {
     path: '/delete',
     name: 'delete',
-    component: ()=> import("../views/RemoveDish.vue")
+    component: ()=> import("../views/Dish/RemoveDish.vue")
   }
 
 ]

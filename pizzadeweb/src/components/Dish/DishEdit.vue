@@ -16,11 +16,12 @@
             
        
         </v-col>
+        <DishList/>
     </div>
 </template>
 <script>
 import axios from 'axios'
-//import DishList from "@/components/DishList.vue"
+import DishList from "@/components/Dish/DishList.vue"
 export default {
     name: "DishEdit",
     data(){
@@ -64,7 +65,7 @@ export default {
 
     },
     components: {
-        //DishList
+        DishList
     }
 }
 </script>

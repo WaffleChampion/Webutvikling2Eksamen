@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import DessertList from '@/components/DessertList.vue'
+import DessertList from '@/components/Dessert/DessertList.vue'
 export default {
     name:"Dessert",
     components: {

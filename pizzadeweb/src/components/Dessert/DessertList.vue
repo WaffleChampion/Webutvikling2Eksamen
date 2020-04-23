@@ -16,7 +16,7 @@
 
 <script>
 import axios from 'axios'
-import DessertItem from '@/components/DessertItem.vue'
+import DessertItem from '@/components/Dessert/DessertItem.vue'
 export default {
     name: "DessertList",
     data(){
