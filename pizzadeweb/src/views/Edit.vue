@@ -6,10 +6,10 @@
             <router-link to="/about">About</router-link> |
             <router-link to="/edit-main">Rediger</router-link>
         </div>
-        <div>
-            <router-link to="/add">Legg til</router-link> |
-            <router-link to="/delete">Fjern</router-link> |
-            <router-link to="/edit">Rediger rett</router-link> |
+        <div> 
+            <router-link to="/dishEdit">Redigere retter</router-link>
+            <router-link to="/drinkEdit"> Redigere Drikke</router-link>
+            <router-link to="/dedssertEdit">Redigere Dessert</router-link>
         </div>
     </div>
 </template>

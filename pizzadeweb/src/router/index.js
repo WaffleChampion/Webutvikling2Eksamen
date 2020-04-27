@@ -33,6 +33,11 @@ Vue.use(VueRouter)
     name: 'admin',
     component: () => import("../views/Admin.vue")
   },
+{
+  path: '/adminhome',
+  name: '/adminhome',
+  component: ()=> import("../views/Admin.vue")
+},
   {
     path: '/dishes',
     name: 'dishes',
@@ -54,20 +59,65 @@ Vue.use(VueRouter)
     component:() => import("../views/Edit.vue")
   },
   {
-    path: '/edit',
-    name: 'edit',
-    component:()=> import("../views//Dish/EditDish.vue")
+    path: '/editdish',
+    name: 'editdish',
+    component:()=> import("../views/Dish/EditDish.vue")
   },
   {
-    path: '/add',
-    name: 'add',
+    path: '/adddish',
+    name: 'adddish',
     component:()=> import("../views/Dish/AddDish.vue")
   },
   {
-    path: '/delete',
-    name: 'delete',
+    path: '/deletedish',
+    name: 'deletedish',
     component: ()=> import("../views/Dish/RemoveDish.vue")
-  }
+  },
+  {
+    path: '/dishadmin',
+    name: 'dishadmin',
+    component: ()=> import("../views/DishAdmin.vue")
+  },
+  {
+    path: '/drinkadmin',
+    name: 'drinkadmin',
+    component: ()=> import("../views/DrinkAdmin.vue")
+  },
+  {
+    path: '/dessertadmin',
+    name: 'dessertadmin',
+    component: ()=> import("../views/DessertAdmin.vue")
+  },
+  {
+  path: '/editdrink',
+  name: 'editdrink',
+  component:()=> import("../views/Drink/EditDrink.vue")
+},
+{
+  path: '/adddrink',
+  name: 'adddrink',
+  component:()=> import("../views/Drink/AddDrink.vue")
+},
+{
+  path: '/deletedrink',
+  name: 'deletedrink',
+  component: ()=> import("../views/Drink/RemoveDrink.vue")
+},
+{    
+  path: '/editdessert',
+name: 'editdessert',
+component:()=> import("../views/Dessert/EditDessert.vue")
+},
+{
+path: '/adddessert',
+name: 'adddessert',
+component:()=> import("../views/Dessert/AddDessert.vue")
+},
+{
+path: '/deletedessert',
+name: 'deletedessert',
+component: ()=> import("../views/Dessert/RemoveDessert.vue")
+}
 
 ]
 
