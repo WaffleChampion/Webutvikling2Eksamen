@@ -22,7 +22,7 @@ export default {
     methods:{
 
         removeDrink(){
-            axios.delete(`https://localhost:5001/meny/${this.DeleteDrink.id}`)
+            axios.delete(`https://localhost:5001/drink/${this.DeleteDrink.id}`)
             .then( result => {
                 console.log(result.data)
             })

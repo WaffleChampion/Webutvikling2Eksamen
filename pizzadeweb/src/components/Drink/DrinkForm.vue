@@ -2,7 +2,7 @@
     <div>
         <v-row>
             <v-col cols="12" sm="6" lg="4" class="mx-auto">
-                <v-text-field v-model="newDrink.drinkType" label="Navn på rett"></v-text-field>
+                <v-text-field v-model="newDrink.type" label="Navn på rett"></v-text-field>
 
                 <v-text-field v-model.number="newDrink.price" type="number" label="legg til pris"></v-text-field>
                 <v-file-input v-model="file" show-size></v-file-input>
@@ -17,13 +17,13 @@ export default {
     name: "DrinkForm",
     data(){
         return {
-            newDrink: { drinkType: "",  imageSrc: "" },
+            newDrink: { type: "",  imageSrc: "" },
             file: null
         }
     },
     methods: {
         postDish(){
-            this.newDrink.imageSrc = this.newDrink.drinkType+".jpg";
+            this.newDrink.imageSrc = this.newDrink.type+".jpg";
 
             let data = new FormData();
             data.append("file", this.file);

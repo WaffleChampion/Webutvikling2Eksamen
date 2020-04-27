@@ -29,21 +29,21 @@ export default {
     methods:{
         getDrink(){
             console.log(this.EditDrink.id)
-            axios.get(`https://localhost:5001/meny/${this.EditDrink.id}`).then( result => {
+            axios.get(`https://localhost:5001/drink/${this.EditDrink.id}`).then( result => {
                     console.log( result.data );
 
-                    this.EditDrink.drinkType=result.data.drinkType
+                    this.EditDrink.drinkType=result.data.type
                     this.EditDrink.price=result.data.price
-                    this.EditDrink.file=result.data.imageSrc
+                    this.EditDrink.imageSrc=result.data.imageSrc
                     this.$forceUpdate();
             })
         },
         editDrink(){
             let obj= {
-                id: this.EditDish.id,
-                drinkType: this.EditDrink.drinkType,
+                id: this.EditDrink.id,
+                type: this.EditDrink.drinkType,
                 price: this.EditDrink.price,
-                imageSrc: this.EditDrink.file}
+                imageSrc: this.EditDrink.imageSrc}
                 console.log(obj)
 
                 axios.put(`https://localhost:5001/drink`, obj).then( result => {
