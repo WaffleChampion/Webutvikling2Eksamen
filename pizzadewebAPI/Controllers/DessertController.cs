@@ -9,10 +9,10 @@ namespace pizzadewebAPI.Controllers{
 
     [ApiController]
     [Route("[controller]")]
-    public class DessertController : ControllerBase{
+    public class DessertsController : ControllerBase{
 
         private readonly MenyContext _context; 
-        public DessertController(MenyContext context){
+        public DessertsController(MenyContext context){
             _context = context;
         }
 
@@ -24,7 +24,7 @@ namespace pizzadewebAPI.Controllers{
 
         [HttpGet("{id}")]
         public async Task<Desserts> Get(int id){
-            Desserts chosenDesserts = await _context.Desserts.FirstOrDefaultAsync( Desserts => desserts.id == id);
+            Desserts chosenDesserts = await _context.Desserts.FirstOrDefaultAsync( desserts => desserts.id == id);
             return chosenDesserts;
         }
                 
