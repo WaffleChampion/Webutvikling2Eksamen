@@ -17,7 +17,7 @@
 </template>
 <script>
 import axios from 'axios'
-import DrinkItem from '@/components/DrinkItem.vue'
+import DrinkItem from '@/components/Drink/DrinkItem.vue'
 
 export default {
     name: "DrinkList",

@@ -8,7 +8,7 @@
         <v-card-title>Allergener: {{ allergens }}</v-card-title>
         <v-card-title>Pris: {{ price }}kr</v-card-title>
         <v-img
-            :src="`https://localhost:5001/images/Dishes/${imageSrc}`"
+            :src="`https://localhost:5001/images/${imageSrc}`"
             height="200px"
             width="400px">
         </v-img>

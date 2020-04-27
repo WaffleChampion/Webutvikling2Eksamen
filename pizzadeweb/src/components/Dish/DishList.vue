@@ -18,7 +18,7 @@
 </template>
 <script>
 import axios from 'axios'
-import DishItem from '@/components/DishItem'
+import DishItem from '@/components/Dish/DishItem'
 export default {
     name: "DishList",
     data(){
