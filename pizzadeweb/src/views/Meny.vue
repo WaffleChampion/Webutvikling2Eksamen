@@ -10,17 +10,18 @@
         <router-link to="/drinks">Drikke</router-link> |
         <router-link to="/dessert">Dessert</router-link>|
       </div>
+    <DishList/>
     </div>
 </template>
 
 <script>
 
-//import DrinkList from '@/components/DrinkList.vue'
+import DishList from '@/components/DishList.vue'
 export default {
 name: 'Meny',
-  //components: {
-    //DishList,
-    //DrinkList
-  //}
+  components: {
+    DishList,
+    
+  }
 }
 </script>

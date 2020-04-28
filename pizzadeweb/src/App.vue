@@ -61,7 +61,7 @@
     </v-card>
     </v-row>
   </v-footer>
-
+  
 
 
 </v-app>
@@ -70,6 +70,9 @@
 </template>
 
 <style lang="scss">
+
+
+
 #toolbar1 a{
   color: #ffffff;
   text-decoration: none;
