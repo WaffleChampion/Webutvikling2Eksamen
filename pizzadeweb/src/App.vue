@@ -1,76 +1,86 @@
 <template>
+<nav >
 <v-app>
+  <div id="toolbar1">
+  <v-toolbar dark
+    padless>
+  <v-toolbar-title>Pizza de Web</v-toolbar-title>
+  <v-spacer></v-spacer>
   
-  <div id="app">
+
+      <router-link to="/costumer"><nav><ul style="list-style: none;"><li><a>Customer</a></li></ul></nav></router-link>
+      <router-link to="/admin"><nav><ul style="list-style: none;"><li><a>Admin</a></li></ul></nav></router-link>
+      <router-link to="/meny"><nav><ul style="list-style: none;"><li><a>Meny</a></li></ul></nav></router-link>
+      <router-link to="/about"><nav><ul style="list-style: none;"><li><a>About</a></li></ul></nav></router-link>
+      <router-link to="/home"><nav><ul style="list-style: none;"><li><a>Home</a></li></ul></nav></router-link>
     
-    <div id="nav">
-      <div id="titlename">
-        <h1><span class="colorOftitle">PIZZA</span>de Web</h1>
-      </div>
+
+  
+  </v-toolbar>
+  </div> 
+     
       
-      <router-link to="/costumer"><nav><ul><li><a>Customer</a></li></ul></nav></router-link>
-      <router-link to="/admin"><nav><ul><li><a>Admin</a></li></ul></nav></router-link>
-      <router-link to="/meny"><nav><ul><li><a>Meny</a></li></ul></nav></router-link>
-      <router-link to="/about"><nav><ul><li><a>About</a></li></ul></nav></router-link>
       
-    </div>
+
+
+
+
+  
+    <div>
     <router-view/>
     <router-link to="/meny"><h1></h1></router-link> 
             <router-link to="/about"></router-link> 
   </div>
+
+
+
   
-<v-footer class="footer"><h1>Footer</h1></v-footer>
+<v-footer 
+    dark
+    padless>
+    <v-row
+      justify="center"
+      
+    >
+  
+    <v-card>
+      <v-card-text>
+      ABOUT
+      </v-card-text>
+      
+
+      <v-card-text class="white--text pt-0">
+      Lorem ipsum dolor sit amet consectetur m laudantium cum ipsa, hic i consectetur adipisicing elit.ipsum dolor sit amet consectetur m laudantium cum ipsa, hic i consectetur adipisicing elit. Nihil sint beatae accusamus necessitatibus, corrupti, numquam dolorum eveniet expedita officiis fugiat omnis ullam pariatur dicta explicabo minima iure aliquid quos assumenda?
+      </v-card-text>
+
+     
+
+      <v-card-text class="white--text">
+        {{ new Date().getFullYear() }} — <strong>PizzaDeWeb</strong>
+      </v-card-text>
+    </v-card>
+    </v-row>
+  </v-footer>
+
+
+
 </v-app>
+
+</nav>
 </template>
 
 <style lang="scss">
-.footer{
-  
-  background-color: #42b983;
-  color: #000;
-
-}
-
-#titlename span{
-  
-  color: rgb(235, 231, 20);
-  padding: 30px;
-  
-
-}
-
-
-#nav{
-  height: 100px;
-  background-color: #3e413f;
-  overflow: hidden;
-  margin: auto;
-  color: #ffff;
-  padding: 40px;
-  
-  
-  
-
-}
-#nav a{
-  color:#ffff;
+#toolbar1 a{
+  color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  float: right;
-  margin-top: 5px;
+  list-style-type: none;
   
 }
-#nav ul{
-  margin: 0;
-  padding: 0;
-}
-#nav li{
- 
-  display: grid;
-  padding: 0 10px 0 10px;
 
-}
+
+
+
+
 
 
 #app {

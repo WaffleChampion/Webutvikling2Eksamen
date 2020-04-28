@@ -1,5 +1,7 @@
 <template>
-<v-app>
+<span class="background">
+<div>
+  
   <v-card-text>
   <v-card-title >
     <h1 class="display-1">Welcome to Pizza De Web</h1>
@@ -11,43 +13,38 @@
     
   </v-card-text>
   <v-contianer class="ImageCards">
-    <v-layout row>
+    <v-row justify="space-around">
+      <v-col>
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+
+      </v-col>
+     
+      <v-col cols="12" md="6">
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+
+
+      </v-col>
       <v-flex xs12 md6>
         <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+
+
+      </v-flex>
+      <v-flex xs12 md6>
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+        
+
+
+      </v-flex>
+      <v-flex xs12 md6>
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+        
+
 
       </v-flex>
      
-      <v-flex xs12 md6>
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-
-
-      </v-flex>
-      <v-flex xs12 md6>
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-
-
-      </v-flex>
-      <v-flex xs12 md6>
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-        
-
-
-      </v-flex>
-      <v-flex xs12 md6>
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-        
-
-
-      </v-flex>
-      <v-flex xs12 md6>
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-        
-
-
-      </v-flex>
       
       
-    </v-layout>
+    </v-row>
     
       
       
@@ -55,7 +52,9 @@
         
    
   </v-contianer>
-</v-app>
+  
+</div>
+ </span>
   
     
 </template>
@@ -65,6 +64,11 @@
   
 </script>
 <style lang="scss">
+.background{
+  
+  background-color: darkred;
+}
+
 .ImageCards{
    margin: 10px 20px;
    
@@ -74,13 +78,6 @@
   margin: 0 auto;
   text-align: center;
   
-
-}
-.footer{
-  display: flex;
-  justify-content: center;
-   padding-top:40%;
-   background:blue
 
 }
 .cards{
