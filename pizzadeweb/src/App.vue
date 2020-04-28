@@ -12,7 +12,7 @@
       <router-link to="/admin"><nav><ul style="list-style: none;"><li><a>Admin</a></li></ul></nav></router-link>
       <router-link to="/meny"><nav><ul style="list-style: none;"><li><a>Meny</a></li></ul></nav></router-link>
       <router-link to="/about"><nav><ul style="list-style: none;"><li><a>About</a></li></ul></nav></router-link>
-      <router-link to="/home"><nav><ul style="list-style: none;"><li><a>Home</a></li></ul></nav></router-link>
+      <router-link to="/"><nav><ul style="list-style: none;"><li><a>Home</a></li></ul></nav></router-link>
     
 
   
