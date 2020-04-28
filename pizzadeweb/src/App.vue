@@ -8,7 +8,7 @@
         <h1><span class="colorOftitle">PIZZA</span>de Web</h1>
       </div>
       
-      <router-link to="/costumer"><nav><ul><li><a>Customer</a></li></ul></nav></router-link>  
+      <router-link to="/costumer"><nav><ul><li><a>Customer</a></li></ul></nav></router-link>
       <router-link to="/admin"><nav><ul><li><a>Admin</a></li></ul></nav></router-link>
       <router-link to="/meny"><nav><ul><li><a>Meny</a></li></ul></nav></router-link>
       <router-link to="/about"><nav><ul><li><a>About</a></li></ul></nav></router-link>
@@ -18,10 +18,18 @@
     <router-link to="/meny"><h1></h1></router-link> 
             <router-link to="/about"></router-link> 
   </div>
+  
+<v-footer class="footer"><h1>Footer</h1></v-footer>
 </v-app>
 </template>
 
 <style lang="scss">
+.footer{
+  
+  background-color: #42b983;
+  color: #000;
+
+}
 
 #titlename span{
   

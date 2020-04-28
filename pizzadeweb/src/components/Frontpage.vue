@@ -48,7 +48,7 @@
       
       
     </v-layout>
-    <v-footer class="footer">Footer</v-footer>
+    
       
       
          
