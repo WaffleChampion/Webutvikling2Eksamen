@@ -32,6 +32,7 @@ export default {
         }
     },
     methods:{
+        //Method to get the specific object from the data base and fill the text fields with the info
         getDish(){
             console.log(this.EditDish.id)
             axios.get(`https://localhost:5001/meny/${this.EditDish.id}`).then( result => {
@@ -47,6 +48,7 @@ export default {
                     this.$forceUpdate();
             })
         },
+        //Method to change the data in the database with the info in the text fields
         editDish(){
             let obj= {
                 id: this.EditDish.id,

@@ -6,7 +6,7 @@
                 <v-text-field v-model="newDessert.desciption" label="Beskrivelse av rett"></v-text-field>
                 <v-text-field v-model.number="newDessert.price" type="number" label="legg til pris"></v-text-field>
                 <v-file-input v-model="file" show-size></v-file-input>
-                <v-btn @click="postDish">Lagre ny rett</v-btn>
+                <v-btn @click="postDish()">Lagre ny rett</v-btn>
             </v-col>
         </v-row>
     </div>
@@ -22,6 +22,7 @@ export default {
         }
     },
     methods: {
+        //Method to create a new entry in the database with the info in the text fields
         postDish(){
             this.newDessert.imageSrc = this.newDessert.dessertName+".jpg";
 

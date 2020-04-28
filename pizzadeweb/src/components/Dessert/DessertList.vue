@@ -6,6 +6,7 @@
             :id="dessert.id"
             :name="dessert.name"
             :Description="dessert.description"
+            :imageSrc="dessert.imageSrc"
             :price="dessert.price"/>
 
         </v-col>
@@ -26,8 +27,9 @@ export default {
             } ]
         }
     },
+    
     created(){
-        console.log("working")
+        //Creates cards with info from the database when the page is loaded
         axios.get("https://localhost:5001/Desserts").then( result => {
             console.log(result.data)
             this.dessertes = result.data;

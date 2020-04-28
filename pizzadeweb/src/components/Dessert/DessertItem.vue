@@ -3,11 +3,11 @@
         <v-card-title>{{ id }}</v-card-title>
         <v-card-title>Navn: {{ name }}</v-card-title>
         <v-card-title>Beskrivelse: {{ Description }}</v-card-title>
-        <!--<v-img
-        :src="`https://localhost:5001/images/Dessert/${imageSrc}`"
+        <v-img
+        :src="`https://localhost:5001/images/${imageSrc}`"
         height= "200px"
         width="100px">
-        </v-img>-->
+        </v-img>
       <v-card-title>Pris: {{ price }}Kr</v-card-title>
 
   </v-card>
@@ -26,9 +26,9 @@ export default {
         Description:{
             type: String
         },
-        //imageSrc:{
-            //type:String
-        //},
+        imageSrc:{
+            type:String
+        },
         price:{
             type: Number
         }

@@ -22,6 +22,7 @@ export default {
         }
     },
     methods: {
+        //Method to create a new entry in the database with the info in the text fields
         postDish(){
             this.newDrink.imageSrc = this.newDrink.type+".jpg";
 

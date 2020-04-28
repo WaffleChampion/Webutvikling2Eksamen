@@ -20,7 +20,7 @@ export default {
         }
     },
     methods:{
-
+        //Method to remove an entry from the database with the defined ID
         removeDrink(){
             axios.delete(`https://localhost:5001/drink/${this.DeleteDrink.id}`)
             .then( result => {

@@ -28,6 +28,7 @@ export default {
             } ]
         }
     },
+    //Creates cards with info from the database when the page is loaded
     created(){
         axios.get("https://localhost:5001/Meny")
             .then( result => {
