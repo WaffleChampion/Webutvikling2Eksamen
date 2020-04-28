@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import DishForm from '@/components/Dish/DishForm'
-export default {
-    name: "AddDish",
-    components: {
-        DishForm
+    import DishForm from '@/components/Dish/DishForm'
+    export default {
+        name: "AddDish",
+        components: {
+            DishForm
+        }
     }
-}
 </script>
 

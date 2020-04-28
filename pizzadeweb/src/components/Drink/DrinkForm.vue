@@ -11,6 +11,7 @@
         </v-row>
     </div>
 </template>
+
 <script>
 import axios from 'axios'
 export default {
@@ -39,7 +40,7 @@ export default {
                         config: { headers: { 'Content-Type': 'multipart/form-data' } }       
                     })
 
-                } )
+            })
         }
     }
 }

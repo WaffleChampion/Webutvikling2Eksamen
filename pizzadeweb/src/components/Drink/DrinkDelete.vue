@@ -7,6 +7,7 @@
         </v-col>
     </div>
 </template>
+
 <script>
 import axios from 'axios'
 import DrinkList from "@/components/Drink/DrinkList.vue"
@@ -26,11 +27,9 @@ export default {
             .then( result => {
                 console.log(result.data)
             })
-},
+        },
  
     },
-        
-    
     components: {
         DrinkList
     }

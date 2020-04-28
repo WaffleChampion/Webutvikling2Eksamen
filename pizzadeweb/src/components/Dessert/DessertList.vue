@@ -16,29 +16,29 @@
 </template>
 
 <script>
-import axios from 'axios'
-import DessertItem from '@/components/Dessert/DessertItem.vue'
-export default {
-    name: "DessertList",
-    data(){
-        return {
-            dessertes: [ {
-                id: 1, name: "OreoKake", description: "Oreo, Vanilje, Egg", price: 70
-            } ]
-        }
-    },
-    
-    created(){
-        //Creates cards with info from the database when the page is loaded
-        axios.get("https://localhost:5001/Desserts").then( result => {
-            console.log(result.data)
-            this.dessertes = result.data;
+    import axios from 'axios'
+    import DessertItem from '@/components/Dessert/DessertItem.vue'
+    export default {
+        name: "DessertList",
+        data(){
+            return {
+                dessertes: [{
+                    id: 1, name: "OreoKake", description: "Oreo, Vanilje, Egg", price: 70
+                }]
+            }
+        },
+        
+        created(){
+            //Creates cards with info from the database when the page is loaded
+            axios.get("https://localhost:5001/Desserts").then( result => {
+                console.log(result.data)
+                this.dessertes = result.data;
 
-        } )
-    },
-    components: {
-        DessertItem
+            })
+        },
+        components: {
+            DessertItem
+        }
     }
-}
 </script>
 

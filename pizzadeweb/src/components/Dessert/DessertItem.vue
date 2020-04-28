@@ -6,32 +6,32 @@
         <v-img
         :src="`https://localhost:5001/images/${imageSrc}`"
         height= "200px"
-        width="100px">
+        width="300px">
         </v-img>
       <v-card-title>Pris: {{ price }}Kr</v-card-title>
 
   </v-card>
 </template>
 <script>
-export default {
-    name: "DessertItem",
-    props: {
-        id:{
-            type:Number
-        },
-        name:{
-            
-            type: String
-        },
-        Description:{
-            type: String
-        },
-        imageSrc:{
-            type:String
-        },
-        price:{
-            type: Number
+    export default {
+        name: "DessertItem",
+        props: {
+            id:{
+                type:Number
+            },
+            name:{
+                
+                type: String
+            },
+            Description:{
+                type: String
+            },
+            imageSrc:{
+                type:String
+            },
+            price:{
+                type: Number
+            }
         }
     }
-}
 </script>

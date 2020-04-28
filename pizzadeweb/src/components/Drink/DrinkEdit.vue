@@ -15,6 +15,7 @@
         <DrinkList/>
     </div>
 </template>
+
 <script>
 import axios from 'axios'
 import DrinkList from "@/components/Drink/DrinkList.vue"

@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        | <router-link to="/adminhome">Home</router-link> |
         <div>
             <router-link to="/adddessert">Legg til</router-link> |
             <router-link to="/deletedessert">Fjern</router-link> |

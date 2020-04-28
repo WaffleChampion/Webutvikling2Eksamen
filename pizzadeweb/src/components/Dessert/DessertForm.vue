@@ -12,35 +12,35 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
-export default {
-    name: "DessetForm",
-    data(){
-        return {
-            newDessert: { dessertName: "",description:"",  imageSrc: "" },
-            file: null
-        }
-    },
-    methods: {
-        //Method to create a new entry in the database with the info in the text fields
-        postDish(){
-            this.newDessert.imageSrc = this.newDessert.dessertName+".jpg";
+    import axios from 'axios'
+    export default {
+        name: "DessetForm",
+        data(){
+            return {
+                newDessert: { dessertName: "",description:"",  imageSrc: "" },
+                file: null
+            }
+        },
+        methods: {
+            //Method to create a new entry in the database with the info in the text fields
+            postDish(){
+                this.newDessert.imageSrc = this.newDessert.dessertName+".jpg";
 
-            let data = new FormData();
-            data.append("file", this.file);
+                let data = new FormData();
+                data.append("file", this.file);
 
-            axios.post("https://localhost:5001/Drink", this.newDessert).then( result => {
-                    console.log( result.data );
+                axios.post("https://localhost:5001/Drink", this.newDessert).then( result => {
+                        console.log( result.data );
 
-                    axios({
-                        method: "POST",
-                        url: "https://localhost:5001/menyadmin/uploadimage",
-                        data: data,
-                        config: { headers: { 'Content-Type': 'multipart/form-data' } }       
-                    })
+                        axios({
+                            method: "POST",
+                            url: "https://localhost:5001/menyadmin/uploadimage",
+                            data: data,
+                            config: { headers: { 'Content-Type': 'multipart/form-data' } }       
+                        })
 
-                } )
+                    } )
+            }
         }
     }
-}
 </script>
