@@ -1,6 +1,6 @@
 <template>
-<span class="background">
-<div>
+<span >
+<div class="background">
   
   <v-card-text>
   <v-card-title >
@@ -65,11 +65,18 @@
 </script>
 <style lang="scss">
 .background{
-  
-  background-color: darkred;
+  background: url('images/Frontpage/pizzabackground.jpg');
+  height: 100%;
+  /*width: 100%;*/
+  background-position: center;
+  background-size: cover;
+
+
 }
 
 .ImageCards{
+
+
    margin: 10px 20px;
    
 }
