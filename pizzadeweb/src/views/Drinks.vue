@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import DrinkList from '@/components/DrinkList.vue'
+import DrinkList from '@/components/Drink/DrinkList.vue'
 export default {
     name:"Drinks",
     components: {

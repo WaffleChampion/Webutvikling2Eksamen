@@ -2,7 +2,7 @@
   <v-card>
       <v-card-title>Navn: {{ type }}</v-card-title>
         <v-img
-        :src="`https://localhost:5001/images/Drinks/${imageSrc}`"
+        :src="`https://localhost:5001/images/${imageSrc}`"
         height= "200px"
         width="100px">
         </v-img>

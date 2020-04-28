@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import DishList from '@/components/DishList.vue'
+import DishList from '@/components/Dish/DishList.vue'
 export default {
     name:"Dishes",
     components: {
