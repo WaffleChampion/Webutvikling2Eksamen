@@ -4,7 +4,7 @@
   
   <v-card-text>
   <v-card-title >
-     
+     <!------Title inside templet with button for meny------->
     <h1 class="display-1">Welcome to Pizza De Web</h1>
      
   </v-card-title>
@@ -12,7 +12,10 @@
   <v-card-text>
     <div id="meny1">
     <router-link to="/meny"><v-btn><a>Meny</a></v-btn></router-link></div>
+    <!------------->
 
+
+<!------Carousel component with src ID "item" imported from script, this is a vuetify feature for image carousel------->
     <div id="carousel1">
     <v-carousel image="auto" hide-delimiters>
     <v-carousel-item
@@ -24,9 +27,10 @@
     ></v-carousel-item>
   </v-carousel>
     </div>
+    <!------------->
     
     
-    
+    <!-----Vuetify cards with text and image defined with grid coloumns-------->
   </v-card-text>
   <v-contianer class="ImageCards">
     <v-row justify="space-around">
@@ -64,14 +68,16 @@
       
     </v-row>
   </v-contianer>
-   
+   <!------------->
+
+
     </div>
   </span>   
 </template>
 
 
  
-  
+  <!-----Script for exporting images into v-carousel-------->
 <script>
   export default {
     data () {
