@@ -44,8 +44,10 @@ namespace pizzadewebAPI.Controllers{
 
         [HttpDelete("{id}")]
         public async Task<Drinks> Delete(int id){
-            Drinks deleteDrinks = await _context.Drinks.FirstOrDefaultAsync( drinks => drinks.id == id );
+            Drinks deleteDrinks = await _context.Drinks.FirstAsync( drinks => drinks.id == id );
             _context.Drinks.Remove(deleteDrinks);
+            await _context.SaveChangesAsync();
+
             return deleteDrinks;
         }
 

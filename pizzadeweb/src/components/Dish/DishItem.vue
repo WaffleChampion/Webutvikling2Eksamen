@@ -9,41 +9,41 @@
         <v-card-title>Pris: {{ price }}kr</v-card-title>
         <v-img
             :src="`https://localhost:5001/images/${imageSrc}`"
-            height="200px"
-            width="400px">
+            height="300px"
+            width="100%">
         </v-img>
     </v-card>
 </template>
 
 <script>
-export default {
-    name: "DishItem",
-    props: {
-        id:{
-            type: Number
-        },
-        type: {
-            type: String
-        },
-        name:{
-            type:String
-        },
-        ingredients: {
-            type: String
-        },
-        vegetarian: {
-            type: String
-        },
-        allergens: {
-            type: String
-        },
-        price: {
-            type: Number
-        },
-        imageSrc: {
-            type: String
-        }
+    export default {
+        name: "DishItem",
+        props: {
+            id:{
+                type: Number
+            },
+            type: {
+                type: String
+            },
+            name:{
+                type:String
+            },
+            ingredients: {
+                type: String
+            },
+            vegetarian: {
+                type: String
+            },
+            allergens: {
+                type: String
+            },
+            price: {
+                type: Number
+            },
+            imageSrc: {
+                type: String
+            }
 
+        }
     }
-}
 </script>

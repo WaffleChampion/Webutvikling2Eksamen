@@ -1,11 +1,9 @@
 <template>
     <div class="background">
         <div id="nav">
-            <router-link to="/dishes"><v-btn>Retter</v-btn></router-link> 
-           
-            <router-link to="/drinks"><v-btn>Drikke</v-btn></router-link> 
-            
-            <router-link to="/dessert"><v-btn>Dessert</v-btn></router-link>
+            <router-link to="/dishes">Retter</router-link> |
+            <router-link to="/drinks">Drikke</router-link> |
+            <router-link to="/dessert">Dessert</router-link>|
         </div>
         <h1>Alle Drikker</h1>
         <DrinkList />

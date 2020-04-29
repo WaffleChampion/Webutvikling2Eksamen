@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="background">
         | <router-link to="/adminhome">Home</router-link> |
-       <div>
+       <div id="nav"> 
             <router-link to="/adddessert">Legg til</router-link> |
             <router-link to="/deletedessert">Fjern</router-link> |
             <router-link to="/editdessert">Rediger</router-link> |
@@ -22,3 +22,20 @@ export default {
 
 }
 </script>
+
+<style lang="scss">
+.background{
+  background: url('../../components/images/Frontpage/pizzabackground.jpg');
+  height: 100%;
+  /*width: 100%;*/
+  background-position: center;
+  background-size: cover;
+}
+
+.background a{
+    color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}
+</style>

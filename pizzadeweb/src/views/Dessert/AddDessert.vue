@@ -36,4 +36,11 @@ export default {
   list-style-type: none;
   text-align: center;
 }
+/*
+#nav a{ 
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}*/
 </style>
