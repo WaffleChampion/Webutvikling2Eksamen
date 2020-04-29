@@ -1,5 +1,5 @@
 <template>
-    <div id="background">
+    <div class="background">
         | <router-link to="/adminhome">Home</router-link> |
         <div id="nav">
             | <router-link to="/adddish">Legg til</router-link> |

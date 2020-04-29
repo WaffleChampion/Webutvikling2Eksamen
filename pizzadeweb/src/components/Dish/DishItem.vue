@@ -9,8 +9,8 @@
         <v-card-title>Pris: {{ price }}kr</v-card-title>
         <v-img
             :src="`https://localhost:5001/images/${imageSrc}`"
-            height="200px"
-            width="400px">
+            height="300px"
+            width="100%">
         </v-img>
     </v-card>
 </template>
