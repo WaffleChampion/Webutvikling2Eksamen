@@ -64,7 +64,7 @@
       
     </v-row>
     
-    
+  </v-contianer>
       
       
       <v-card-text>
