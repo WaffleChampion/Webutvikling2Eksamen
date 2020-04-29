@@ -1,4 +1,5 @@
 <template>
+
     <div>
         <v-card id="deleteCard">
         <v-text-field v-model.number="DeleteDessert.id" label="Enter dish id"></v-text-field>
@@ -8,6 +9,7 @@
             <DessertList />
         </v-col>
     </div>
+
 </template>
 <script>
     import axios from 'axios'
@@ -21,6 +23,7 @@
                 file:null
             }
         },
+
         methods:{
             //Method to remove an entry from the database with the defined ID
             removeDessert(){
@@ -28,11 +31,10 @@
                 .then( result => {
                     console.log(result.data)
                 })
-    },
+            },
     
         },
             
-        
         components: {
             DessertList
         }
