@@ -1,5 +1,5 @@
 const TextStore = {
-
+//store som inneholder text
     state: {
         texts: [
             {id: 100, info: "imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum"},
@@ -22,7 +22,7 @@ const TextStore = {
     },
 
     setTexts(){
-
+        //axios kall for å sette this.state.texts = result.data
     },
 
     getTexts(){
