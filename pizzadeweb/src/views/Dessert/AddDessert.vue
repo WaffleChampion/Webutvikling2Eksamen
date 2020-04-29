@@ -1,7 +1,7 @@
 <template>
     <div class="background">
         | <router-link to="/adminhome">Home</router-link> |
-       <div>
+       <div id="nav">
             <router-link to="/adddessert">Legg til</router-link> |
             <router-link to="/deletedessert">Fjern</router-link> |
             <router-link to="/editdessert">Rediger</router-link> |
@@ -28,7 +28,12 @@ export default {
   /*width: 100%;*/
   background-position: center;
   background-size: cover;
+}
 
-
+#nav a{ 
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
 }
 </style>

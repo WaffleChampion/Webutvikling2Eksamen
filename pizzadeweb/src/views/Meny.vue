@@ -1,6 +1,6 @@
 <template>
     <div class="background">
-      <div>
+      <div id="nav">
         <router-link to="/dishes">Retter</router-link> |
         <router-link to="/drinks">Drikke</router-link> |
         <router-link to="/dessert">Dessert</router-link>|
@@ -28,7 +28,12 @@ name: 'Meny',
   /*width: 100%;*/
   background-position: center;
   background-size: cover;
+}
 
-
+#nav a{ 
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
 }
 </style>

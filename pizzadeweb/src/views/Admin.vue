@@ -36,8 +36,5 @@ export default {
   text-decoration: none;
   list-style-type: none;
   text-align: center;
-
-
-
 }
 </style>
