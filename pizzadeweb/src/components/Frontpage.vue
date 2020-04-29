@@ -64,53 +64,7 @@
       
     </v-row>
   </v-contianer>
-    
-    
-      
-      
-      <v-card-text>
-        <v-card-title >
-          <h1 class="display-1">Welcome to Pizza De Web</h1>
-        </v-card-title>
-      </v-card-text>
-
-      <v-card-text>
-        <router-link to="/meny"><v-btn><a>Meny</a></v-btn></router-link>
-
-        <div id="carousel1">
-          <v-carousel image="auto" hide-delimiters>
-          <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-            ></v-carousel-item>
-          </v-carousel>
-        </div>
-      </v-card-text>
-
-      <v-container class="ImageCards">
-        <v-row justify="space-around">
-
-          <v-col cols="12" md="6">
-            <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.png')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-
-          </v-col>
-          <v-col cols="12" md="6">
-            <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.png')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-
-          </v-col>
-          <v-col cols="12" md="6">
-            <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader2.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-          </v-col>
-
-          <v-col cols="12" md="6">
-            <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader2.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
-          </v-col>  
-
-        </v-row> 
-      </v-container> 
+   
     </div>
   </span>   
 </template>
