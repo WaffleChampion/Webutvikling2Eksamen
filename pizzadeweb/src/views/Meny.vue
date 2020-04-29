@@ -1,10 +1,12 @@
 <template>
     <div class="background">
-      <div id="nav">
-        <router-link to="/dishes">Retter</router-link> |
-        <router-link to="/drinks">Drikke</router-link> |
-        <router-link to="/dessert">Dessert</router-link>|
-      </div>
+        <div id="nav">
+            <router-link to="/dishes"><v-btn>Retter</v-btn></router-link> 
+           
+            <router-link to="/drinks"><v-btn>Drikke</v-btn></router-link> 
+            
+            <router-link to="/dessert"><v-btn>Dessert</v-btn></router-link>
+        </div>
     <DishList/>
     </div>
 </template>
@@ -35,5 +37,6 @@ name: 'Meny',
   text-decoration: none;
   list-style-type: none;
   text-align: center;
+    margin: 3px;
 }
 </style>
