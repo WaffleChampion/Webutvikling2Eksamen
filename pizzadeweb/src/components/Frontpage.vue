@@ -13,7 +13,7 @@
     <router-link to="/meny"><v-btn><a>Meny</a></v-btn></router-link>
 
     <div id="carousel1">
-    <v-carousel hide-delimiters>
+    <v-carousel image="auto" hide-delimiters>
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
@@ -106,22 +106,15 @@
 
 <style lang="scss">
 
-.v-btn__content {
-    align-items: center;
-    color: inherit;
-    display: flex;
-    flex: 1 0 auto;
-    justify-content: inherit;
-    line-height: normal;
-    position: relative;
-}
+
 
 #carousel1{
-  position: relative;
+  background-size: cover;
   padding:20%;
   padding-top: 5%;
   padding-bottom: 10%;
   overflow: hidden;
+  max-width: 100%
 
 
 }
