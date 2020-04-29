@@ -17,25 +17,26 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
-import DishItem from '@/components/Dish/DishItem'
-export default {
-    name: "DishList",
-    data(){
-        return {
-            dishes:[ { 
-                id: 1, type: "Pizza", name: "Hawaii", ingredients: "Ananas, skinke, ost, tomatsaus", vegetarian: "false", allergens: "gluten, laktose", price: 179, imageSrc: "pizzahawaii.jpg"
-            } ]
+    import axios from 'axios'
+    import DishItem from '@/components/Dish/DishItem'
+    export default {
+        name: "DishList",
+        data(){
+            return {
+                dishes:[ { 
+                    id: 1, type: "Pizza", name: "Hawaii", ingredients: "Ananas, skinke, ost, tomatsaus", vegetarian: "false", allergens: "gluten, laktose", price: 179, imageSrc: "pizzahawaii.jpg"
+                } ]
+            }
+        },
+        //Creates cards with info from the database when the page is loaded
+        created(){
+            axios.get("https://localhost:5001/Meny")
+                .then( result => {
+                    this.dishes = result.data;
+                })
+        },
+        components: {
+            DishItem
         }
-    },
-    created(){
-        axios.get("https://localhost:5001/Meny")
-            .then( result => {
-                this.dishes = result.data;
-            } )
-    },
-    components: {
-        DishItem
     }
-}
 </script>

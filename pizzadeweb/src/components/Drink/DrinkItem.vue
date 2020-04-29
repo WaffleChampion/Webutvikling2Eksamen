@@ -1,5 +1,6 @@
 <template>
   <v-card>
+      <v-card-title>id: {{ id}} </v-card-title>
       <v-card-title>Navn: {{ type }}</v-card-title>
         <v-img
         :src="`https://localhost:5001/images/${imageSrc}`"
@@ -10,10 +11,14 @@
 
   </v-card>
 </template>
+
 <script>
 export default {
     name: "DrinkItem",
     props: {
+        id:{
+            type: Number
+        },
         type:{
             
             type: String

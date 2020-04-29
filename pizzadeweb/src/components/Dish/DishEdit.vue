@@ -20,52 +20,55 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
-import DishList from "@/components/Dish/DishList.vue"
-export default {
-    name: "DishEdit",
-    data(){
-        return{
-            EditDish:{},
-            items: [`type`, `navn`, `ingredienser`, `vegetar`, `allergener`, `pris`],
-            file:null
-        }
-    },
-    methods:{
-        getDish(){
-            console.log(this.EditDish.id)
-            axios.get(`https://localhost:5001/meny/${this.EditDish.id}`).then( result => {
-                    console.log( result.data );
-                    this.EditDish.dishType=result.data.dishType
-                    this.EditDish.dishName=result.data.dishName
-                    this.EditDish.ingredients=result.data.ingredients
-                    this.EditDish.vegetarian=result.data.vegetarian
-                    this.EditDish.allergens=result.data.allergens
-                    this.EditDish.price=result.data.price
-                    this.EditDish.file=result.data.imageSrc
-                    console.log(result.data.dishType)
-                    this.$forceUpdate();
-            })
+    import axios from 'axios'
+    import DishList from "@/components/Dish/DishList.vue"
+    export default {
+        name: "DishEdit",
+        data(){
+            return{
+                EditDish:{},
+                items: [`type`, `navn`, `ingredienser`, `vegetar`, `allergener`, `pris`],
+                file:null
+            }
         },
-        editDish(){
-            let obj= {
-                id: this.EditDish.id,
-                dishType: this.EditDish.dishType,
-                dishName: this.EditDish.dishName,
-                ingredients: this.EditDish.ingredients,
-                vegetarian: this.EditDish.vegetarian,
-                allergens: this.EditDish.allergens,
-                price: this.EditDish.price,
-                imageSrc: this.EditDish.file}
-                console.log(obj)
+        methods:{
+            //Method to get the specific object from the data base and fill the text fields with the info
+            getDish(){
+                console.log(this.EditDish.id)
+                axios.get(`https://localhost:5001/meny/${this.EditDish.id}`).then( result => {
+                        console.log( result.data );
+                        this.EditDish.dishType=result.data.dishType
+                        this.EditDish.dishName=result.data.dishName
+                        this.EditDish.ingredients=result.data.ingredients
+                        this.EditDish.vegetarian=result.data.vegetarian
+                        this.EditDish.allergens=result.data.allergens
+                        this.EditDish.price=result.data.price
+                        this.EditDish.file=result.data.imageSrc
+                        console.log(result.data.dishType)
+                        this.$forceUpdate();
+                })
+            },
+            //Method to change the data in the database with the info in the text fields
+            editDish(){
+                let obj= {
+                    id: this.EditDish.id,
+                    dishType: this.EditDish.dishType,
+                    dishName: this.EditDish.dishName,
+                    ingredients: this.EditDish.ingredients,
+                    vegetarian: this.EditDish.vegetarian,
+                    allergens: this.EditDish.allergens,
+                    price: this.EditDish.price,
+                    imageSrc: this.EditDish.file}
+                    console.log(obj)
 
-                axios.put(`https://localhost:5001/meny`, obj).then( result => {
-                    console.log( result.data );})
+                    axios.put(`https://localhost:5001/meny`, obj).then( result => {
+                        console.log( result.data );
+                        })
+                }
+
+        },
+        components: {
+            DishList
         }
-
-    },
-    components: {
-        DishList
     }
-}
 </script>

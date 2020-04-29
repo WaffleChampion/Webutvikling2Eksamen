@@ -16,34 +16,34 @@
 </template>
 
 <script>
-export default {
-    name: "DishItem",
-    props: {
-        id:{
-            type: Number
-        },
-        type: {
-            type: String
-        },
-        name:{
-            type:String
-        },
-        ingredients: {
-            type: String
-        },
-        vegetarian: {
-            type: String
-        },
-        allergens: {
-            type: String
-        },
-        price: {
-            type: Number
-        },
-        imageSrc: {
-            type: String
-        }
+    export default {
+        name: "DishItem",
+        props: {
+            id:{
+                type: Number
+            },
+            type: {
+                type: String
+            },
+            name:{
+                type:String
+            },
+            ingredients: {
+                type: String
+            },
+            vegetarian: {
+                type: String
+            },
+            allergens: {
+                type: String
+            },
+            price: {
+                type: Number
+            },
+            imageSrc: {
+                type: String
+            }
 
+        }
     }
-}
 </script>

@@ -15,6 +15,7 @@
         </v-row>
 </div>
 </template>
+
 <script>
 import axios from 'axios'
 import DrinkItem from '@/components/Drink/DrinkItem.vue'
@@ -28,19 +29,17 @@ export default {
 
 
     },
+    //Creates cards with info from the database when the page is loaded
     created(){
-            axios.get("https://localhost:5001/Drink")
-            .then( result =>{
-                this.drinks = result.data;
-            }
-
-
-            )},
-        
-        components: {
-            DrinkItem
-        }
-        }
+        axios.get("https://localhost:5001/Drink")
+        .then( result =>{
+            this.drinks = result.data;
+        })
+    },     
+    components: {
+        DrinkItem
+    }
+}
         
 
 </script>
