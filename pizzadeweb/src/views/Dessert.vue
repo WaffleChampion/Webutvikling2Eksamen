@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-.background{
+.background a{
   background: url('../components/images/Frontpage/pizzabackground.jpg');
   height: 100%;
   /*width: 100%;*/

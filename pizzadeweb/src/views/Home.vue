@@ -1,5 +1,14 @@
 <template>
-    <Frontpage/>
+
+
+  
+  
+
+  
+    <Frontpage 
+    />
+  
+  
 </template>
 
 <script>

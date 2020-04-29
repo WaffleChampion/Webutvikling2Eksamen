@@ -1,41 +1,22 @@
 <template>
-    <div class="background">
+    <div>
         <h1>Velg</h1>
         <div id="nav">
-            | <router-link to="/dishadmin" class="link">Retter</router-link> |
-            <router-link to="/drinkadmin" class="link">Drikke</router-link> |
-            <router-link to="/dessertadmin" class="link">Dessert</router-link> |
+            <router-link to="/dishadmin">Retter</router-link> |
+            <router-link to="/drinkadmin">Drikke</router-link> |
+            <router-link to="/dessertadmin">Dessert</router-link>
 
         </div>
-        <DishList/>
+
     </div>
 </template>
 
 <script>
-import DishList from "@/components/Dish/DishList.vue"
 export default {
-    name: "Admin",
+    name: "CustumerHome",
     components:{
-        DishList
+        
     }
     
 }
 </script>
-
-<style lang="scss">
-.background{
-  background: url('../components/images/Frontpage/pizzabackground.jpg');
-  height: 100%;
-  /*width: 100%;*/
-  background-position: center;
-  background-size: cover;
-}
-
-#nav a{
-    
-  color: #ffffff;
-  text-decoration: none;
-  list-style-type: none;
-  text-align: center;
-}
-</style>
