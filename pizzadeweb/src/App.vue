@@ -8,7 +8,7 @@
   
   
 
-      <router-link to="/costumer"><nav><ul style="list-style: none;"><li><a>Customer</a></li></ul></nav></router-link>
+      <router-link to="/"><nav><ul style="list-style: none;"><li><a>Customer</a></li></ul></nav></router-link>
       <router-link to="/admin"><nav><ul style="list-style: none;"><li><a>Admin</a></li></ul></nav></router-link>
        <v-spacer></v-spacer>
 
