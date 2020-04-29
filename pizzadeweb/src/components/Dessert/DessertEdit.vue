@@ -1,17 +1,16 @@
 <template>
+
     <div>
         <v-col cols="12" sm="6" lg="4" class="mx-auto">
-        <v-text-field v-model.number="EditDessert.id" label="Enter dish id"></v-text-field>
-        <v-btn @click="getDessert()">Hent rett</v-btn>
-        
-        
-                <v-text-field v-model="EditDessert.DessertName"></v-text-field>
-                <v-text-field v-model="EditDessert.description"></v-text-field>
-                <v-text-field v-model.number="EditDessert.price" type="number" ></v-text-field>
-                <v-text-field v-model="EditDessert.imageSrc"></v-text-field>
-             <v-btn @click="editDessert()">Endre rett</v-btn>
+            <v-text-field v-model.number="EditDessert.id" label="Enter dish id"></v-text-field>
+            <v-btn @click="getDessert()">Hent rett</v-btn>
             
-       
+            
+            <v-text-field v-model="EditDessert.DessertName"></v-text-field>
+            <v-text-field v-model="EditDessert.description"></v-text-field>
+            <v-text-field v-model.number="EditDessert.price" type="number" ></v-text-field>
+            <v-text-field v-model="EditDessert.imageSrc"></v-text-field>
+            <v-btn @click="editDessert()">Endre rett</v-btn>
         </v-col>
         <DessertList/>
     </div>
@@ -27,6 +26,7 @@
                 file:null
             }
         },
+
         methods:{
             //Method to get the specific object from the data base and fill the text fields with the info
             getDessert(){
@@ -41,6 +41,7 @@
                         this.$forceUpdate();
                 })
             },
+
             //Method to change the data in the database with the info in the text fields
             editDessert(){
                 let obj= {
@@ -54,8 +55,8 @@
                     axios.put(`https://localhost:5001/dessert`, obj).then( result => {
                         console.log( result.data );})
             }
-
         },
+
         components: {
             DessertList
         }
