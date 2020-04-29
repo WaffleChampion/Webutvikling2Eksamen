@@ -1,18 +1,10 @@
 <template>
 
-
-
-  
-  <div class="about">
-    <h1>PizzaDeWeb</h1>
-  </div>
-
-
 </template>
 
 <script>
-</script>
 
+</script>
 <style>
 #app {
   position: absolute;
@@ -25,8 +17,5 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.about{
-  color: goldenrod;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 <v-app>
-  <div id="app">
+  <div>
     <div id="nav">
       <router-link to="/costumer">Kunde</router-link>|
       <router-link to="/admin">Admin</router-link>
