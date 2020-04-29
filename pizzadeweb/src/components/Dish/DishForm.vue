@@ -15,18 +15,19 @@
     </div>
 </template>
 <script>
-    import axios from 'axios'
-    export default {
-        name: "DishForm",
-        data(){
-            return {
-                newDish: { dishType: "", dishName: "", ingredients: "", allergens:"",  imageSrc: "" },
-                file: null
-            }
-        },
-        methods: {
-            postDish(){
-                this.newDish.imageSrc = this.newDish.dishName+".jpg";
+import axios from 'axios'
+export default {
+    name: "DishForm",
+    data(){
+        return {
+            newDish: { dishType: "", dishName: "", ingredients: "", allergens:"",  imageSrc: "" },
+            file: null
+        }
+    },
+    methods: {
+        //Method to create a new entry in the database with the info in the text fields
+        postDish(){
+            this.newDish.imageSrc = this.newDish.dishName+".jpg";
 
                 let data = new FormData();
                 data.append("file", this.file);

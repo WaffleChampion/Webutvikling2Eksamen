@@ -1,24 +1,32 @@
 <template>
+
+
   
-  <div class="home">
-            <div>
-            <router-link to="/meny">Menu</router-link> |
-            <router-link to="/about">About</router-link> |
-        </div>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  
+
+  
+    <Frontpage 
+    />
+  
   
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Frontpage from '@/components/Frontpage.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Frontpage
   }
 }
 </script>
+<style lang="scss" >
+.header{
+  position: absolute;
+  color: rgb(197, 35, 35);
+  height: 30px;
+  width: 100%;
+}
+</style>
