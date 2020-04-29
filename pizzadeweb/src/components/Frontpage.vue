@@ -124,7 +124,7 @@
 #carousel1{
   color:none;
 }
-@media all and (min-width: 0.1px) and (max-width: 599.9px){#carousel1{
+@media all and (min-width: 0.1px) and (max-width: 900px){#carousel1{
   display:none;
 
 }
