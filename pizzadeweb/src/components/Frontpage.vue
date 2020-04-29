@@ -128,6 +128,23 @@
   
   
 }
+@media all and (min-width: 0.1px) and (max-width: 463px){.display-1{
+ display:none;
+}
+ 
+
+}
+
+
+
+#meny1 a{
+  color:black;
+  text-decoration: none ;
+  list-style-type: none;
+  
+  
+  
+}
 
 
 
