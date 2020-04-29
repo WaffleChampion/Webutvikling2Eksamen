@@ -1,6 +1,8 @@
 <template>
     <div class="background">
+        <div id="nav">
         | <router-link to="/adminhome">Home</router-link> |
+        </div>
         <div id="nav">
             <router-link to="/adddrink">Legg til</router-link> |
             <router-link to="/deletedrink">Fjern</router-link> |

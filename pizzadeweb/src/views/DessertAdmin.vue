@@ -1,12 +1,18 @@
 <template>
     <div class="background">
+        
+        <div id="nav">
         | <router-link to="/adminhome">Home</router-link> |
+        </div>
+
         <div id="nav">
             <router-link to="/adddessert">Legg til</router-link> |
             <router-link to="/deletedessert">Fjern</router-link> |
             <router-link to="/editdessert">Rediger rett</router-link> |
         </div>
+
         <DessertList/>
+
     </div>
 </template>
 
