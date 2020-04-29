@@ -7,6 +7,7 @@
         </v-col>
     </div>
 </template>
+
 <script>
 import axios from 'axios'
 import DrinkList from "@/components/Drink/DrinkList.vue"
@@ -20,17 +21,15 @@ export default {
         }
     },
     methods:{
-
+        //Method to remove an entry from the database with the defined ID
         removeDrink(){
-            axios.delete(`https://localhost:5001/meny/${this.DeleteDrink.id}`)
+            axios.delete(`https://localhost:5001/drink/${this.DeleteDrink.id}`)
             .then( result => {
                 console.log(result.data)
             })
-},
+        },
  
     },
-        
-    
     components: {
         DrinkList
     }
