@@ -30,8 +30,8 @@ export default {
   background-size: cover;
 }
 
-#nav a{ 
-  color: #ffffff;
+.background a{
+    color: #ffffff;
   text-decoration: none;
   list-style-type: none;
   text-align: center;

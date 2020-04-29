@@ -6,7 +6,7 @@
         <v-img
         :src="`https://localhost:5001/images/${imageSrc}`"
         height= "200px"
-        width="300px">
+        width="100%">
         </v-img>
       <v-card-title>Pris: {{ price }}Kr</v-card-title>
 

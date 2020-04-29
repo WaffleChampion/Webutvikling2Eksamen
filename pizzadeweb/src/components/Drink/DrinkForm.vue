@@ -1,5 +1,6 @@
 <template>
     <div>
+        <v-card id="addCard">
         <v-row>
             <v-col cols="12" sm="6" lg="4" class="mx-auto">
                 <v-text-field v-model="newDrink.type" label="Navn på rett"></v-text-field>
@@ -9,6 +10,7 @@
                 <v-btn @click="postDish">Lagre ny rett</v-btn>
             </v-col>
         </v-row>
+        </v-card>
     </div>
 </template>
 
@@ -45,3 +47,14 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+#addCard{ 
+    
+    background-color: #fff;
+    flex: 0 0 auto; margin-right: 30%; margin-top: 20px; margin-left:30%;
+    box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 1.0);
+    overflow: hidden;
+
+}
+</style>
