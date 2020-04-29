@@ -108,16 +108,31 @@
 
 
 
+
 #carousel1{
   background-size: cover;
   padding:20%;
   padding-top: 5%;
   padding-bottom: 10%;
   overflow: hidden;
-  max-width: 100%
+  max-width: 100%;
+  
+  
 
 
 }
+#carousel1{
+  color:none;
+}
+@media all and (min-width: 0.1px) and (max-width: 599.9px){#carousel1{
+  display:none;
+
+}
+ 
+
+}
+
+
 
 .background{
   background: url('images/Frontpage/pizzabackground.jpg');

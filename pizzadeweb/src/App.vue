@@ -12,7 +12,7 @@
       <router-link to="/admin"><nav><ul style="list-style: none;"><li><a>Admin</a></li></ul></nav></router-link>
        <v-spacer></v-spacer>
 
-<v-toolbar-title>Pizza de Web</v-toolbar-title>
+<v-toolbar-title id="titlePizza">Pizza de Web</v-toolbar-title>
  <v-spacer></v-spacer>
 
       <router-link to="/meny"><nav><ul style="list-style: none;"><li><a>Meny</a></li></ul></nav></router-link>
@@ -75,6 +75,16 @@
 </template>
 
 <style lang="scss">
+#titlePizza{
+  color:#ffffff;
+}
+@media all and (min-width: 0.1px) and (max-width: 599.9px){#titlePizza{
+  display:none;
+
+}
+ 
+
+}
 
 
 
