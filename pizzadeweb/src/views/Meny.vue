@@ -1,10 +1,5 @@
 <template>
-    <div id="nav">
-      <div>
-            <router-link to="/">Home</router-link> |
-            <router-link to="/meny">Menu</router-link> |
-            <router-link to="/about">About</router-link> |
-      </div>
+    <div class="background">
       <div>
         <router-link to="/dishes">Retter</router-link> |
         <router-link to="/drinks">Drikke</router-link> |
@@ -25,3 +20,15 @@ name: 'Meny',
   }
 }
 </script>
+
+<style lang="scss">
+.background{
+  background: url('../components/images/Frontpage/pizzabackground.jpg');
+  height: 100%;
+  /*width: 100%;*/
+  background-position: center;
+  background-size: cover;
+
+
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="background">
         <div>
             <router-link to="/">Home</router-link> |
             <router-link to="/meny">Menu</router-link> |
@@ -13,3 +13,15 @@
         </div>
     </div>
 </template>
+
+<style lang="scss">
+.background{
+  background: url('../components/images/Frontpage/pizzabackground.jpg');
+  height: 100%;
+  /*width: 100%;*/
+  background-position: center;
+  background-size: cover;
+
+
+}
+</style>

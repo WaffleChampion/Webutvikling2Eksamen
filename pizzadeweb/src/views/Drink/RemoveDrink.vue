@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="background">
         | <router-link to="/adminhome">Home</router-link> |
         <div>
             | <router-link to="/adddrink">Legg til</router-link> |
@@ -21,3 +21,15 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.background{
+  background: url('../../components/images/Frontpage/pizzabackground.jpg');
+  height: 100%;
+  /*width: 100%;*/
+  background-position: center;
+  background-size: cover;
+
+
+}
+</style>
