@@ -31,7 +31,7 @@ Vue.use(VueRouter)
   {
     path: '/costumer',
     name: 'costumer',
-    component: () => import("../views/Costumer.vue")
+    component: Home
   },
   {
     path: '/admin',
