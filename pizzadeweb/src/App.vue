@@ -4,12 +4,17 @@
   <div id="toolbar1">
   <v-toolbar dark
     padless>
-  <v-toolbar-title>Pizza de Web</v-toolbar-title>
-  <v-spacer></v-spacer>
+  
+  
   
 
       <router-link to="/costumer"><nav><ul style="list-style: none;"><li><a>Customer</a></li></ul></nav></router-link>
       <router-link to="/admin"><nav><ul style="list-style: none;"><li><a>Admin</a></li></ul></nav></router-link>
+       <v-spacer></v-spacer>
+
+<v-toolbar-title>Pizza de Web</v-toolbar-title>
+ <v-spacer></v-spacer>
+
       <router-link to="/meny"><nav><ul style="list-style: none;"><li><a>Meny</a></li></ul></nav></router-link>
       <router-link to="/about"><nav><ul style="list-style: none;"><li><a>About</a></li></ul></nav></router-link>
       <router-link to="/"><nav><ul style="list-style: none;"><li><a>Home</a></li></ul></nav></router-link>
@@ -77,6 +82,7 @@
   color: #ffffff;
   text-decoration: none;
   list-style-type: none;
+  text-align: center;
   
   
 }
