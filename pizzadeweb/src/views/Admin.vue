@@ -7,15 +7,16 @@
             <router-link to="/dessertadmin" class="link">Dessert</router-link> |
 
         </div>
-
+        <DishList/>
     </div>
 </template>
 
 <script>
+import DishList from "@/components/Dish/DishList.vue"
 export default {
     name: "Admin",
     components:{
-        
+        DishList
     }
     
 }
