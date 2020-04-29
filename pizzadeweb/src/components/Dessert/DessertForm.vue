@@ -1,15 +1,15 @@
 <template>
     <div>
         <v-card id="addCard">
-        <v-row>
-            <v-col cols="12" sm="6" lg="4" class="mx-auto">
-                <v-text-field v-model="newDessert.dessertName" label="Navn på rett"></v-text-field>
-                <v-text-field v-model="newDessert.desciption" label="Beskrivelse av rett"></v-text-field>
-                <v-text-field v-model.number="newDessert.price" type="number" label="legg til pris"></v-text-field>
-                <v-file-input v-model="file" show-size></v-file-input>
-                <v-btn @click="postDish()">Lagre ny rett</v-btn>
-            </v-col>
-        </v-row>
+            <v-row>
+                <v-col cols="12" sm="6" lg="4" class="mx-auto">
+                    <v-text-field v-model="newDessert.dessertName" label="Navn på rett"></v-text-field>
+                    <v-text-field v-model="newDessert.desciption" label="Beskrivelse av rett"></v-text-field>
+                    <v-text-field v-model.number="newDessert.price" type="number" label="legg til pris"></v-text-field>
+                    <v-file-input v-model="file" show-size></v-file-input>
+                    <v-btn @click="postDish()">Lagre ny rett</v-btn>
+                </v-col>
+            </v-row>
         </v-card>
     </div>
 </template>

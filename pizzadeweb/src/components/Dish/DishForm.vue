@@ -1,20 +1,22 @@
 <template>
+
     <div >
         <v-card id="addCard">
-        <v-row>
-            <v-col cols="12" sm="6" lg="4" class="mx-auto" >
-                <v-text-field v-model="newDish.dishType" label="Type rett"></v-text-field>
-                <v-text-field v-model="newDish.dishName" label="Navn på rett"></v-text-field>
-                <v-text-field v-model="newDish.ingredients" label="Legg til ingredienser"></v-text-field>
-                <v-text-field v-model="newDish.vegetarian" label="Vegetar?"></v-text-field>
-                <v-text-field v-model="newDish.allergens" label="Legg til allergener"></v-text-field>
-                <v-text-field v-model.number="newDish.price" type="number" label="Legg til pris"></v-text-field>
-                <v-file-input v-model="file" label="Legg til bilde" show-size></v-file-input>
-                <v-btn @click="postDish">Lagre ny rett</v-btn>
-            </v-col>
-        </v-row>
+            <v-row>
+                <v-col cols="12" sm="6" lg="4" class="mx-auto" >
+                    <v-text-field v-model="newDish.dishType" label="Type rett"></v-text-field>
+                    <v-text-field v-model="newDish.dishName" label="Navn på rett"></v-text-field>
+                    <v-text-field v-model="newDish.ingredients" label="Legg til ingredienser"></v-text-field>
+                    <v-text-field v-model="newDish.vegetarian" label="Vegetar?"></v-text-field>
+                    <v-text-field v-model="newDish.allergens" label="Legg til allergener"></v-text-field>
+                    <v-text-field v-model.number="newDish.price" type="number" label="Legg til pris"></v-text-field>
+                    <v-file-input v-model="file" label="Legg til bilde" show-size></v-file-input>
+                    <v-btn @click="postDish">Lagre ny rett</v-btn>
+                </v-col>
+            </v-row>
         </v-card>
     </div>
+
 </template>
 <script>
 import axios from 'axios'

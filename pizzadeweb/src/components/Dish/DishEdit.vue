@@ -1,27 +1,26 @@
 <template>
+
     <div >
         <div >
             <v-card id="editCard">
-            <v-col cols="12" sm="6" lg="4" class="mx-auto">
-            <v-text-field v-model.number="EditDish.id" label="Enter dish id"></v-text-field>
-            <v-btn @click="getDish()">Hent rett</v-btn>
-        
-        
-                <v-text-field v-model="EditDish.dishType"></v-text-field>
-                <v-text-field v-model="EditDish.dishName"></v-text-field>
-                <v-text-field v-model="EditDish.ingredients" ></v-text-field>
-                <v-text-field v-model="EditDish.vegetarian" ></v-text-field>
-                <v-text-field v-model="EditDish.allergens" ></v-text-field>
-                <v-text-field v-model.number="EditDish.price" type="number" ></v-text-field>
-                <v-text-field v-model="EditDish.file" show-size></v-text-field>
-                <v-btn @click="editDish()">Endre rett</v-btn>
-            
-       
-            </v-col>
+                <v-col cols="12" sm="6" lg="4" class="mx-auto">
+                    <v-text-field v-model.number="EditDish.id" label="Enter dish id"></v-text-field>
+                    <v-btn @click="getDish()">Hent rett</v-btn>
+                    <v-text-field v-model="EditDish.dishType"></v-text-field>
+                    <v-text-field v-model="EditDish.dishName"></v-text-field>
+                    <v-text-field v-model="EditDish.ingredients" ></v-text-field>
+                    <v-text-field v-model="EditDish.vegetarian" ></v-text-field>
+                    <v-text-field v-model="EditDish.allergens" ></v-text-field>
+                    <v-text-field v-model.number="EditDish.price" type="number" ></v-text-field>
+                    <v-text-field v-model="EditDish.file" show-size></v-text-field>
+                    <v-btn @click="editDish()">Endre rett</v-btn>
+                
+                </v-col>
             </v-card>
         </div>
         <DishList/>
     </div>
+    
 </template>
 <script>
     import axios from 'axios'

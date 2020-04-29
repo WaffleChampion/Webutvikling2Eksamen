@@ -1,9 +1,10 @@
 <template>
     <div>
         <v-card id="deleteCard">
-        <v-text-field v-model.number="DeleteDrink.id" label="Enter dish id"></v-text-field>
-        <v-btn @click="removeDrink()">Slett rett</v-btn>
+            <v-text-field v-model.number="DeleteDrink.id" label="Enter dish id"></v-text-field>
+            <v-btn @click="removeDrink()">Slett rett</v-btn>
         </v-card>
+        
         <v-col cols="12" sm="6" lg="4" class="mx-auto">
             <DrinkList />
         </v-col>

@@ -1,11 +1,14 @@
 <template>
+
     <div>
         <v-card id="deleteCard">
-        <v-text-field v-model.number="DeleteDish.id" label="Enter dish id"></v-text-field>
-        <v-btn @click="removeDish()">Slett rett</v-btn>
+            <v-text-field v-model.number="DeleteDish.id" label="Enter dish id"></v-text-field>
+            <v-btn @click="removeDish()">Slett rett</v-btn>
         </v-card>
+
         <DishList />
     </div>
+
 </template>
 
 <script>

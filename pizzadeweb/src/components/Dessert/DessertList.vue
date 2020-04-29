@@ -1,19 +1,19 @@
 <template>
-<div>
-    <v-row>
-        <v-col cols="12" sm="6" lg="4" v-for="dessert in dessertes" :key="dessert.id">
-            <v-card id="dessertCard">
-            <DessertItem
-            :id="dessert.id"
-            :name="dessert.name"
-            :Description="dessert.description"
-            :imageSrc="dessert.imageSrc"
-            :price="dessert.price"/>
-            </v-card>
 
-        </v-col>
-|   </v-row>
-</div>
+    <div>
+        <v-row>
+            <v-col cols="12" sm="6" lg="4" v-for="dessert in dessertes" :key="dessert.id">
+                <v-card id="dessertCard">
+                <DessertItem
+                    :id="dessert.id"
+                    :name="dessert.name"
+                    :Description="dessert.description"
+                    :imageSrc="dessert.imageSrc"
+                    :price="dessert.price"/>
+                </v-card>
+            </v-col>
+    |   </v-row>
+    </div>
     
 </template>
 

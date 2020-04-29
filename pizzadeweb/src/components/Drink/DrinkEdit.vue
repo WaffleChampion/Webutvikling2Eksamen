@@ -1,20 +1,18 @@
 <template>
     <div>
         <v-card id="editCard">
-        <v-col cols="12" sm="6" lg="4" class="mx-auto">
-        <v-text-field v-model.number="EditDrink.id" label="Enter dish id"></v-text-field>
-        <v-btn @click="getDrink()">Hent rett</v-btn>
-        
-        
+            <v-col cols="12" sm="6" lg="4" class="mx-auto">
+                <v-text-field v-model.number="EditDrink.id" label="Enter dish id"></v-text-field>
+                <v-btn @click="getDrink()">Hent rett</v-btn>
                 <v-text-field v-model="EditDrink.drinkType"></v-text-field>
                 <v-text-field v-model.number="EditDrink.price" type="number" ></v-text-field>
                 <v-text-field v-model="EditDrink.imageSrc"></v-text-field>
-             <v-btn @click="editDrink()">Endre rett</v-btn>
-            
-       
-        </v-col>
+                <v-btn @click="editDrink()">Endre rett</v-btn>
+            </v-col>
         </v-card>
+
         <DrinkList/>
+        
     </div>
 </template>
 
