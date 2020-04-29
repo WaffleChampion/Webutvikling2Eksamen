@@ -17,45 +17,47 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
-import DessertList from "@/components/Dessert/DessertList.vue"
-export default {
-    name: "DessertEdit",
-    data(){
-        return{
-            EditDessert:{},
-            file:null
-        }
-    },
-    methods:{
-        getDessert(){
-            console.log(this.EditDessert.id)
-            axios.get(`https://localhost:5001/meny/${this.EditDessert.id}`).then( result => {
-                    console.log( result.data );
-
-                    this.EditDessert.dessertName=result.data.dessertName
-                    this.EditDessert.description=result.data.description
-                    this.EditDessert.price=result.data.price
-                    this.EditDessert.imageSrc=result.data.imageSrc
-                    this.$forceUpdate();
-            })
+    import axios from 'axios'
+    import DessertList from "@/components/Dessert/DessertList.vue"
+    export default {
+        name: "DessertEdit",
+        data(){
+            return{
+                EditDessert:{},
+                file:null
+            }
         },
-        editDessert(){
-            let obj= {
-                id: this.EditDessert.id,
-                dessertName: this.EditDessert.dessertName,
-                description: this.EditDessert.description,
-                price: this.EditDessert.price,
-                imageSrc: this.EditDessert.imageSrc}
-                console.log(obj)
+        methods:{
+            //Method to get the specific object from the data base and fill the text fields with the info
+            getDessert(){
+                console.log(this.EditDessert.id)
+                axios.get(`https://localhost:5001/meny/${this.EditDessert.id}`).then( result => {
+                        console.log( result.data );
 
-                axios.put(`https://localhost:5001/dessert`, obj).then( result => {
-                    console.log( result.data );})
+                        this.EditDessert.dessertName=result.data.dessertName
+                        this.EditDessert.description=result.data.description
+                        this.EditDessert.price=result.data.price
+                        this.EditDessert.imageSrc=result.data.imageSrc
+                        this.$forceUpdate();
+                })
+            },
+            //Method to change the data in the database with the info in the text fields
+            editDessert(){
+                let obj= {
+                    id: this.EditDessert.id,
+                    dessertName: this.EditDessert.dessertName,
+                    description: this.EditDessert.description,
+                    price: this.EditDessert.price,
+                    imageSrc: this.EditDessert.imageSrc}
+                    console.log(obj)
+
+                    axios.put(`https://localhost:5001/dessert`, obj).then( result => {
+                        console.log( result.data );})
+            }
+
+        },
+        components: {
+            DessertList
         }
-
-    },
-    components: {
-        DessertList
     }
-}
 </script>

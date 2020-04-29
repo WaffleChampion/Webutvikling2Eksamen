@@ -15,6 +15,7 @@
         <DrinkList/>
     </div>
 </template>
+
 <script>
 import axios from 'axios'
 import DrinkList from "@/components/Drink/DrinkList.vue"
@@ -27,23 +28,25 @@ export default {
         }
     },
     methods:{
+        //Method to get the specific object from the data base and fill the text fields with the info
         getDrink(){
             console.log(this.EditDrink.id)
-            axios.get(`https://localhost:5001/meny/${this.EditDrink.id}`).then( result => {
+            axios.get(`https://localhost:5001/drink/${this.EditDrink.id}`).then( result => {
                     console.log( result.data );
 
-                    this.EditDrink.drinkType=result.data.drinkType
+                    this.EditDrink.drinkType=result.data.type
                     this.EditDrink.price=result.data.price
-                    this.EditDrink.file=result.data.imageSrc
+                    this.EditDrink.imageSrc=result.data.imageSrc
                     this.$forceUpdate();
             })
         },
+        //Method to change the data in the database with the info in the text fields
         editDrink(){
             let obj= {
-                id: this.EditDish.id,
-                drinkType: this.EditDrink.drinkType,
+                id: this.EditDrink.id,
+                type: this.EditDrink.drinkType,
                 price: this.EditDrink.price,
-                imageSrc: this.EditDrink.file}
+                imageSrc: this.EditDrink.imageSrc}
                 console.log(obj)
 
                 axios.put(`https://localhost:5001/drink`, obj).then( result => {

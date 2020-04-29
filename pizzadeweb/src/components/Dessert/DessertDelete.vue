@@ -8,31 +8,31 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
-import DessertList from "@/components/Dessert/DessertList.vue"
-export default {
-    name: "DishDelete",
-    data(){
-        return{
+    import axios from 'axios'
+    import DessertList from "@/components/Dessert/DessertList.vue"
+    export default {
+        name: "DishDelete",
+        data(){
+            return{
 
-            DeleteDessert:{id: 1},
-            file:null
-        }
+                DeleteDessert:{id: 1},
+                file:null
+            }
+        },
+        methods:{
+            //Method to remove an entry from the database with the defined ID
+            removeDessert(){
+                axios.delete(`https://localhost:5001/meny/${this.DeleteDessert.id}`)
+                .then( result => {
+                    console.log(result.data)
+                })
     },
-    methods:{
-
-        removeDessert(){
-            axios.delete(`https://localhost:5001/meny/${this.DeleteDessert.id}`)
-            .then( result => {
-                console.log(result.data)
-            })
-},
- 
-    },
-        
     
-    components: {
-        DessertList
+        },
+            
+        
+        components: {
+            DessertList
+        }
     }
-}
 </script>
