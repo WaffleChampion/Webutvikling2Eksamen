@@ -116,7 +116,7 @@
   
   padding-top:5px;
   min-height: 70px;
-  border-bottom: rgb(235, 231, 20) 3px solid;
+  
 
   a {
     font-weight: bold;

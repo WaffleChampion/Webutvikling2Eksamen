@@ -10,7 +10,8 @@
   </v-card-title>
   </v-card-text>
   <v-card-text>
-    <router-link to="/meny"><v-btn><a>Meny</a></v-btn></router-link>
+    <div id="meny1">
+    <router-link to="/meny"><v-btn><a>Meny</a></v-btn></router-link></div>
 
     <div id="carousel1">
     <v-carousel image="auto" hide-delimiters>
@@ -105,6 +106,28 @@
 </script>
 
 <style lang="scss">
+.display-1{
+  color:#ffff;
+  font-size: larger;
+  
+  }
+@media all and (min-width: 0.1px) and (max-width: 463px){.display-1{
+ display:none;
+}
+ 
+
+}
+
+
+
+#meny1 a{
+  color:black;
+  text-decoration: none ;
+  list-style-type: none;
+  
+  
+  
+}
 
 
 
