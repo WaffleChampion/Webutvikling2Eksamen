@@ -63,6 +63,7 @@
       
       
     </v-row>
+  </v-contianer>
     
     
       
@@ -89,7 +90,7 @@
         </div>
       </v-card-text>
 
-      <v-contianer class="ImageCards">
+      <v-container class="ImageCards">
         <v-row justify="space-around">
 
           <v-col cols="12" md="6">
@@ -109,7 +110,7 @@
           </v-col>  
 
         </v-row> 
-      </v-contianer> 
+      </v-container> 
     </div>
   </span>   
 </template>

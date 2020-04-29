@@ -21,8 +21,6 @@ export default {
 }
 </script>
 
-<<<<<<< HEAD
-=======
 <style lang="scss">
 .background{
   background: url('../../components/images/Frontpage/pizzabackground.jpg');
@@ -46,4 +44,3 @@ export default {
   text-align: center;
 }*/
 </style>
->>>>>>> parent of fcc33ce6... Revert "Merge branch 'Dev-branch' into design"
