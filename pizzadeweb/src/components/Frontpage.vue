@@ -10,7 +10,7 @@
   </v-card-title>
   </v-card-text>
   <v-card-text>
-    <router-link to="/meny"><v-btn>Meny</v-btn></router-link>
+    <router-link to="/meny"><v-btn><a>Meny</a></v-btn></router-link>
 
     <div id="carousel1">
     <v-carousel hide-delimiters>
@@ -37,23 +37,23 @@
 
      
       <v-col cols="12" md="6">
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.png')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
 
 
       </v-col>
       <v-col cols="12" md="6">
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.png')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
 
 
       </v-col>
       <v-col cols="12" md="6">
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader2.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
         
 
 
       </v-col>
       <v-col cols="12" md="6">
-        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
+        <v-card outline block class="cards"><v-img :src="require('./images/Frontpage/pizzaheader2.jpg')"></v-img>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam ex modi, saepe distinctio amet, pariatur iste culpa quis, at quos dolorum earum similique quae aliquid cum quam nisi repudiandae?</v-card>
         
 
 
@@ -86,7 +86,8 @@
       return {
         items: [
           {
-            src: require("../assets/images/chorizo.jpg")
+            src: require("../assets/images/chorizo.jpg"),
+            title: 'hei',
           },
           {
             src: require("../assets/images/pastacarbonara.jpg")
@@ -104,10 +105,25 @@
 </script>
 
 <style lang="scss">
+
+.v-btn__content {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: inherit;
+    line-height: normal;
+    position: relative;
+}
+
 #carousel1{
   position: relative;
-  border-color: darkred 3px;
-  padding: 20px;
+  padding:20%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  overflow: hidden;
+
+
 }
 
 .background{
@@ -135,7 +151,7 @@
 }
 .cards{
   box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 1.0);
-  flex: 0 0 50%; margin-right: 20px; margin-top: 20px; margin-left:100px;
+  flex: 0 0 50%; margin-right: 100px; margin-top: 20px; margin-left:100px;
 
 
 }
