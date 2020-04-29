@@ -8,6 +8,7 @@ const TextStore = {
             {id: 103, info: "ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum"},
             {id: 104, info: "rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,"},
             {id: 105, info: "lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet"},
+<<<<<<< HEAD
             {id: 106, info: "orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, "},
             {id: 107, info: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque"},
             {id: 108, info: "penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."},
@@ -34,6 +35,9 @@ const TextStore = {
             {id: 129, info: "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem"},
             {id: 130, info: "penatibus et magnis dis parturien"}
 
+=======
+            {id: 106, info: "orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"}
+>>>>>>> parent of fcc33ce6... Revert "Merge branch 'Dev-branch' into design"
         ]
     },
 

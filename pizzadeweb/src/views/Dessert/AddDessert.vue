@@ -21,3 +21,29 @@ export default {
 }
 </script>
 
+<<<<<<< HEAD
+=======
+<style lang="scss">
+.background{
+  background: url('../../components/images/Frontpage/pizzabackground.jpg');
+  height: 100%;
+  /*width: 100%;*/
+  background-position: center;
+  background-size: cover;
+}
+
+.background a{
+    color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}
+/*
+#nav a{ 
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}*/
+</style>
+>>>>>>> parent of fcc33ce6... Revert "Merge branch 'Dev-branch' into design"
