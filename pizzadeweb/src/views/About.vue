@@ -4,6 +4,7 @@
 
   
   <div class="about">
+    <!--
     <h1>PizzaDeWeb</h1>
     <h2> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
       Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
@@ -22,7 +23,12 @@
       Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
       montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, se
       m. Nulla consequat massa quis enim.
-    </h2>
+    </h2>-->
+    <ul>
+    <li v-for="Text in texts" :key="Text.id">
+        {{Text.info}}
+    </li >
+    </ul>
   </div>
 
 
